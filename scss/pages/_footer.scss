@@ -1,0 +1,59 @@
+.s-map {
+  .email__content__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .row {
+    gap: 3.2rem 0;
+  }
+}
+.s-contato {
+  height: 100%;
+
+  h2 {
+    color: $primary-99;
+  }
+  .row {
+    gap: 2.4rem 0;
+  }
+}
+
+footer {
+  background: $neutral-10;
+  .container {
+    gap: 3.2rem;
+  }
+  ul {
+    li {
+      color: $white;
+      a{
+        color: $white;
+      }
+    }
+  }
+  @media screen and (max-width: 1140px) {
+    .container {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  
+  .s-map {
+    .row {
+      flex-wrap: wrap;
+    }
+    .email, .whatsapp, .endereco {
+      .row {
+        flex-direction: column;
+      }
+    }
+    .icon {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+}

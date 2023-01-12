@@ -1,0 +1,60 @@
+$gap:0.8rem;
+$max-size: 30;
+
+@for $i from 1 through $max-size {
+  .m-#{$i} {
+    margin: $i * $gap;
+  }
+  .mt-#{$i} {
+    margin-top: $i * $gap;
+  }
+  .mb-#{$i} {
+    margin-bottom: $i * $gap;
+  }
+  .ml-#{$i} {
+    margin-left: $i * $gap;
+  }
+  .mr-#{$i} {
+    margin-right: $i * $gap;
+  }
+  .my-#{$i} {
+    margin-top: $i * $gap;
+    margin-bottom: $i * $gap;
+  }
+  .mx-#{$i} {
+    margin-right: $i * $gap;
+    margin-left: $i * $gap;
+  }
+  .p-#{$i} {
+    padding: $i * $gap;
+  }
+  .pt-#{$i} {
+    padding-top: $i * $gap;
+  }
+  .pb-#{$i} {
+    padding-bottom: $i * $gap;
+  }
+  .pl-#{$i} {
+    padding-left: $i * $gap;
+  }
+  .pr-#{$i} {
+    padding-right: $i * $gap;
+  }
+  .py-#{$i} {
+    padding-top: $i * $gap;
+    padding-bottom: $i * $gap;
+  }
+  .px-#{$i} {
+    padding-right: $i * $gap;
+    padding-left: $i * $gap;
+  }
+} 
+.m-0 {
+  margin: 0;
+}
+.p-0 {
+  padding: 0;
+}
+.m-auto {
+  margin: 0 auto;
+}

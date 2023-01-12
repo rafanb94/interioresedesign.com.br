@@ -1,0 +1,33 @@
+@import 'scss/colors';
+*,
+*:after,
+*:before {
+  margin:0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 62.5%;
+  scroll-padding-top: cal(15.2rem + 1.6rem);
+  // scroll-behavior: smooth;
+  font-family: 'Lato', sans-serif;
+}
+img,svg, iframe {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+@import 'scss/grid';
+@import 'scss/spacing';
+@import 'scss/typography';
+@import 'scss/components';
+@import 'scss/pages/header';
+@import 'scss/pages/home';
+@import 'scss/pages/servicos';
+@import 'scss/pages/produtos';
+@import 'scss/pages/sobre';
+@import 'scss/pages/footer';

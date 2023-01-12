@@ -1,0 +1,21 @@
+#pageAbout {
+  .s-hero {
+    width: 100%;
+    height: 100%;
+    padding-top: 21.9rem;
+      
+      h1 {
+        color: $primary-80;
+        margin-bottom: 4rem;
+      }
+      p {
+        color:$primary-99;  
+      }
+    } 
+    .s-about {
+      .about__content {
+       max-width: 62.8rem;
+       width: 100%;
+      }
+    }
+}
