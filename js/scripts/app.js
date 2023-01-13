@@ -13,19 +13,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		btnMobile.classList.toggle("is-active");
 	}
 	navLink.forEach(n => n.addEventListener('click', linkAction))
-
-	// new Splide("#servicos", {
-	// 	perPage: 3,
-	// 	pagination: false,
-	// 	breakpoints: {
-	// 		1140: {
-	// 			perPage: 2,
-	// 		},
-	// 		540: {
-	// 			perPage: 1,
-	// 		},
-	// 	},
-	// }).mount();
-
+	
+	const header = document.getElementById('js-header');
+	function fixedMenu() {
+		if (window.pageYOffset > 80) {
+			header.classList.add("fixed-menu");
+		} else {
+			header.classList.remove("fixed-menu");
+		}
+	}
+	document.addEventListener('scroll', fixedMenu);
 });
 

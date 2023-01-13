@@ -15,7 +15,7 @@
     <?php wp_head();?>
 	</head>
 	<body>
-	<header class="header">
+	<header id="js-header" class="header">
 			<div class="container d-flex flex-col">
 				<div class="row jc-center">
 					<div class="logo">
@@ -28,8 +28,8 @@
 						</span>
 					</button>
 				</div>
-				<div class="row jc-center ai-center mt-7">
-					<nav class="navbar-desktop d-flex grow jc-center ai-center">
+				<div class="row jc-center ai-center">
+					<nav class="navbar-desktop d-flex grow jc-center ai-center mt-7">
 						<ul class="menu-desktop d-flex">
 							<li class="menu-desktop__item p-1">
 								<a class="menu-desktop__link" href="/">Papéis de Paredes</a>
