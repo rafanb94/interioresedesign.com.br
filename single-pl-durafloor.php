@@ -5,10 +5,10 @@
 		<div class="container">
 			<div class="row jc-between">
 				<div class="row">
-					<img src="<?php echo get_template_directory_uri()?>/img/bg-linha-link.jpg" alt="">
+					<img src="<?php the_field('produto_image_background'); ?>" alt="<?php the_field('texto_alternativo_produto_image_background'); ?>">
 				</div>
 				<div class="row flex-col jc-center ai-center">
-					<h1 class="txt-center">LINHA LINK</h1>
+					<h1 class="txt-center"><?php the_title()?></h1>
 					<p class="txt-center" style="max-width:520px">Trabalhamos com as melhores marcas de Piso Laminado do mercado, com profissionais altamente capacitados e credenciados pelos fabricantes, preparados para a instalação desse material com rapidez e qualidade.</p>
 				</div>
 			</div>
@@ -55,7 +55,7 @@
 				</div>
 				<div class="product-colors">
 					<div class="container">
-						<img width=410 height=483 src="<?php echo get_template_directory_uri()?>/img/durafloor-colors.png" alt="">
+						<img width=412 height=652 src="<?php the_field('tipos_de_piso'); ?>" alt="">
 					</div>
 				</div>
 			</div>

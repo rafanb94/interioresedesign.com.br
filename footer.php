@@ -47,7 +47,8 @@
 			<div class="row flex-col ai-center">
 				<img src="<?php echo get_template_directory_uri()?>/img/logo-interior-e-design.svg" alt="">
 				<h2 class="txt-center">Construímos a casa ou</br>escrítório dos seus sonhos</h2>
-				<a class="btn btn-primary--lg" href="">solicitar orçamento</a>
+				<a class="btn btn-primary--lg" 
+					href="https://wa.me/5511976747309?text=Gostaria%20de%20um%20orçamento%20do%20produto%20<?php the_title()?>">solicitar orçamento</a>
 			</div>
 		</div>
 	</section>

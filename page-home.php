@@ -19,12 +19,12 @@
 								<li class="txt-center"><div @click.prevent="activeTab = 'allTabs'" :class="{ 'active': activeTab === 'allTabs' }" href="#allTabs">
 									<img class=" m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/products-menu-icon.png" alt="">Exibir todos</div>
 								</li>
-								<li class="txt-center"><div @click.prevent="activeTab = 'papeisParede'"
+								<!-- <li class="txt-center"><div @click.prevent="activeTab = 'papeisParede'"
 										:class="{ 'active': activeTab === 'papeisParede' }" 								href="#papeisParede">
 										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/papeis-de-paredes.png">Papéis de Parede</div>
-								</li>
-								<li class="txt-center"><div @click.prevent="activeTab = ''"
-										:class="{ 'active': activeTab === '' }" 								href="#papeisParede">
+								</li> -->
+								<li class="txt-center"><div @click.prevent="activeTab = 'pisoLaminado'"
+										:class="{ 'active': activeTab === 'pisoLaminado' }" 								href="#pisoLaminado">
 										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/piso-laminado.png">Piso Laminado</div>
 								</li>
 								<li class="txt-center"><div @click.prevent="activeTab = ''"
@@ -50,22 +50,25 @@
 							</ul>
 						</nav>
 						<div class="row">
-							<div x-show="activeTab === 'papeisParede' || activeTab === 'allTabs'" class="papeisParede">
+							<div x-show="activeTab === 'pisoLaminado' || activeTab === 'allTabs'" class="pisoLaminado">
 								<?php 
-									$config = array ('posts_per_page' => '-1', 'post_type' => 'piso-laminado-durafloor', 'order'=> 'DESC');
+									$config = array ('posts_per_page' => '-1', 'post_type' => 'pl-durafloor', 'order'=> 'DESC');
 									$query_posts = new WP_Query($config);
 								?>
 								<div class="row flex-wrap my-10">
 								<?php if(have_posts()):while($query_posts -> have_posts()):$query_posts -> the_post();?>
+								<a href="<?php the_permalink()?>">
 									<div class="card-produto">
-										<div class="card-img mb-4">
-											<img src="<?php the_field('produto_thumbmail'); ?>" alt="">
+										<div class="card-img mb-4">	
+											<img src="<?php the_field('produto_thumbmail'); ?>" 
+											alt="<?php the_field('texto_alternativo_thumbmail'); ?>">
 										</div>
-										<div class="card-content d-flex jc-between">
+										<div class="card-content d-flex jc-between ai-center">
 											<h3><?php the_title()?></h3>
-												<a class="d-flex jc-between ai-center" href="#">Saiba mais <img  class="icon" src="<?php echo get_template_directory_uri()?>/img/icon-saiba-mais.svg" alt=""></a>
+											<a class="d-flex jc-between ai-center" href="<?php the_permalink()?>">Saiba mais <img  class="icon" src="<?php echo get_template_directory_uri()?>/img/icon-saiba-mais.svg" alt=""></a>
 										</div>
 									</div>
+								</a>
 								<?php endwhile; endif; wp_reset_query()?>
 								</div>
 							</div>
