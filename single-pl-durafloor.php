@@ -55,7 +55,7 @@
 				</div>
 				<div class="product-colors">
 					<div class="container">
-						<img width=412 height=652 src="<?php the_field('tipos_de_piso'); ?>" alt="">
+						<img src="<?php the_field('tipos_de_piso'); ?>" alt="">
 					</div>
 				</div>
 			</div>

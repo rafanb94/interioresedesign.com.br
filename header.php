@@ -31,26 +31,23 @@
 				<div class="row jc-center ai-center">
 					<nav class="navbar-desktop d-flex grow jc-center ai-center mt-7">
 						<ul class="menu-desktop d-flex">
-							<li class="menu-desktop__item p-1">
+							<!-- <li class="menu-desktop__item p-1">
 								<a class="menu-desktop__link" href="/">Papéis de Paredes</a>
+							</li> -->
+							<li class="menu-desktop__item p-1 ml-3">
+								<a class="menu-desktop__link" href="">Piso Laminado</a>
 							</li>
 							<li class="menu-desktop__item p-1 ml-3">
-								<a class="menu-desktop__link" href="#produtos">Piso Laminado</a>
+								<a class="menu-desktop__link" href="">Cortinas de tecidos e Persianas</a>
 							</li>
 							<li class="menu-desktop__item p-1 ml-3">
-								<a class="menu-desktop__link" href="#contato">Cortinas de tecidos e Persianas</a>
+								<a class="menu-desktop__link" href="">Piso Vinílico</a>
 							</li>
 							<li class="menu-desktop__item p-1 ml-3">
-								<a class="menu-desktop__link" href="#localizacao">Piso Vinílico</a>
+								<a class="menu-desktop__link" href="">Box de Vidro</a>
 							</li>
 							<li class="menu-desktop__item p-1 ml-3">
-								<a class="menu-desktop__link" href="#fornecedores">Box de Vidro</a>
-							</li>
-							<li class="menu-desktop__item p-1 ml-3">
-								<a class="menu-desktop__link" href="#fornecedores">Molduras de Isopor</a>
-							</li>
-							<li class="menu-desktop__item p-1 ml-3">
-								<a class="menu-desktop__link" href="#fornecedores">Carpete de Nylon</a>
+								<a class="menu-desktop__link" href="">Molduras de Isopor</a>
 							</li>
 						</ul>
 					</nav>

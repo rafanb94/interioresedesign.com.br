@@ -42,11 +42,7 @@
 								<li class="txt-center"><div @click.prevent="activeTab = ''"
 										:class="{ 'active': activeTab === '' }" 								href="#papeisParede">
 										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/molduras-de-isopor.png">Molduras de Isopor</div>
-								</li>
-								<li class="txt-center"><div @click.prevent="activeTab = ''"
-										:class="{ 'active': activeTab === '' }" 								href="#papeisParede">
-										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/carpete-de-nylon.png">Carpete de Nylon</div>
-								</li>																			
+								</li>																	
 							</ul>
 						</nav>
 						<div class="row">
@@ -81,15 +77,34 @@
 					<div class="swiper mySwiper">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<img src="<?php echo get_template_directory_uri()?>/img/c-colorkey-papel-de-parede.jpg" alt=""></div>
-							<div class="swiper-slide">
-								<img src="<?php echo get_template_directory_uri()?>/img/c-colorkey-papel-de-parede.jpg" alt="">
-								</div>
-							<div class="swiper-slide">
-								<img src="<?php echo get_template_directory_uri()?>/img/c-colorkey-papel-de-parede.jpg" alt="">
+								<a href="<?php echo get_template_directory_uri()?>/download/vip-wiler-k.pdf" download>
+									<img src="<?php echo get_template_directory_uri()?>/download/vip-wilerk-decoracao.jpg" alt="">
+								</a>	
 							</div>
 							<div class="swiper-slide">
-								<img src="<?php echo get_template_directory_uri()?>/img/c-colorkey-papel-de-parede.jpg" alt="">
+								<a href="<?php echo get_template_directory_uri()?>/download/texture-wiler-k.pdf" download>
+									<img src="<?php echo get_template_directory_uri()?>/download/texture-wilerk-decoracao.jpg" alt="">
+								</a>	
+							</div>	
+							<div class="swiper-slide">
+								<a href="<?php echo get_template_directory_uri()?>/download/roll-in-stones-2-wiler-k.pdf" download>
+									<img src="<?php echo get_template_directory_uri()?>/download/roll-in-stones-2-wilerk-decoracao.jpg" alt="">
+								</a>	
+							</div>
+							<div class="swiper-slide">
+								<a href="<?php echo get_template_directory_uri()?>/download/livina-wiler-k.pdf" download>
+									<img src="<?php echo get_template_directory_uri()?>/download/livina-wilerk-decoracao.jpg" alt="">
+								</a>	
+							</div>
+							<div class="swiper-slide">
+								<a href="<?php echo get_template_directory_uri()?>/download/colorkey-wiler-k.pdf" download>
+									<img src="<?php echo get_template_directory_uri()?>/download/colorkey-wilerk-decoracao.jpg" alt="">
+								</a>	
+							</div>
+							<div class="swiper-slide">
+								<a href="<?php echo get_template_directory_uri()?>/download/castellani-lançamento-edantex.pdf" download>
+									<img src="<?php echo get_template_directory_uri()?>/download/castellani-decoracao.jpg" alt="">
+								</a>	
 							</div>
 						</div>
 						<div class="swiper-button-next"></div>
