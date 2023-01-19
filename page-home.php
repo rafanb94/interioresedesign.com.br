@@ -27,8 +27,8 @@
 										:class="{ 'active': activeTab === 'pisoLaminado' }" 								href="#pisoLaminado">
 										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/piso-laminado.png">Piso Laminado</div>
 								</li>
-								<li class="txt-center"><div @click.prevent="activeTab = ''"
-										:class="{ 'active': activeTab === '' }" 								href="#papeisParede">
+								<li class="txt-center"><div @click.prevent="activeTab = 'cortinas'"
+										:class="{ 'active': activeTab === 'cortinas' }" 								href="#cortinas">
 										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/cortinas-de-tecidos-e-persianas.png">Cortinas de tecidos</div>
 								</li>
 								<li class="txt-center"><div @click.prevent="activeTab = ''"
@@ -45,10 +45,32 @@
 								</li>																	
 							</ul>
 						</nav>
-						<div class="row">
+						<div class="row flex-col">
 							<div x-show="activeTab === 'pisoLaminado' || activeTab === 'allTabs'" class="pisoLaminado">
 								<?php 
-									$config = array ('posts_per_page' => '-1', 'post_type' => 'pl-durafloor', 'order'=> 'DESC');
+									$config = array ('posts_per_page' => '6', 'post_type' => 'pl-durafloor', 'order'=> 'DESC');
+									$query_posts = new WP_Query($config);
+								?>
+								<div class="row flex-wrap my-10">
+								<?php if(have_posts()):while($query_posts -> have_posts()):$query_posts -> the_post();?>
+								<a href="<?php the_permalink()?>">
+									<div class="card-produto">
+										<div class="card-img mb-4">	
+											<img src="<?php the_field('produto_thumbmail'); ?>" 
+											alt="<?php the_field('texto_alternativo_thumbmail'); ?>">
+										</div>
+										<div class="card-content d-flex jc-between ai-center">
+											<h3><?php the_title()?></h3>
+											<a class="d-flex jc-between ai-center" href="<?php the_permalink()?>">Saiba mais <img  class="icon" src="<?php echo get_template_directory_uri()?>/img/icon-saiba-mais.svg" alt=""></a>
+										</div>
+									</div>
+								</a>
+								<?php endwhile; endif; wp_reset_query()?>
+								</div>
+							</div>
+							<div x-show="activeTab === 'cortinas' || activeTab === 'allTabs'" class="cortinas">
+								<?php 
+									$config = array ('posts_per_page' => '6', 'post_type' => 'cortinas', 'order'=> 'DESC');
 									$query_posts = new WP_Query($config);
 								?>
 								<div class="row flex-wrap my-10">
