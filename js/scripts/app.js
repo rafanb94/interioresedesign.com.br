@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
 	const btnMobile = document.getElementById("js-btn-mobile");
 	btnMobile.addEventListener("click", () => {
 		btnMobile.classList.toggle("is-active");
@@ -23,5 +22,4 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 	document.addEventListener('scroll', fixedMenu);
-});
 

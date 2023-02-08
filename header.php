@@ -35,7 +35,7 @@
 								<a class="menu-desktop__link" href="/">Papéis de Paredes</a>
 							</li> -->
 							<li class="menu-desktop__item p-1 ml-3">
-								<a class="menu-desktop__link" href="">Piso Laminado</a>
+								<a class="menu-desktop__link" href="<?php echo get_permalink(get_page_by_path("pisos laminados"))?>">Piso Laminado</a>
 							</li>
 							<li class="menu-desktop__item p-1 ml-3">
 								<a class="menu-desktop__link" href="">Cortinas de tecidos e Persianas</a>
@@ -46,9 +46,9 @@
 							<li class="menu-desktop__item p-1 ml-3">
 								<a class="menu-desktop__link" href="">Box de Vidro</a>
 							</li>
-							<li class="menu-desktop__item p-1 ml-3">
+							<!-- <li class="menu-desktop__item p-1 ml-3">
 								<a class="menu-desktop__link" href="">Molduras de Isopor</a>
-							</li>
+							</li> -->
 						</ul>
 					</nav>
 				</div>

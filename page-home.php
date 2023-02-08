@@ -39,19 +39,27 @@
 										:class="{ 'active': activeTab === '' }" 								href="#papeisParede">
 										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/box-de-vidro.png">Box de Vidro</div>
 								</li>	
-								<li class="txt-center"><div @click.prevent="activeTab = ''"
+								<!-- <li class="txt-center"><div @click.prevent="activeTab = ''"
 										:class="{ 'active': activeTab === '' }" 								href="#papeisParede">
 										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/molduras-de-isopor.png">Molduras de Isopor</div>
-								</li>																	
+								</li>																	 -->
 							</ul>
 						</nav>
-						<div class="row flex-col">
+						<div class="row flex-col"> 
 							<div x-show="activeTab === 'pisoLaminado' || activeTab === 'allTabs'" class="pisoLaminado">
+								<header class="product-title my-5">
+									<h2>Pisos Laminados</h2>
+								</header>
 								<?php 
-									$config = array ('posts_per_page' => '6', 'post_type' => 'pl-durafloor', 'order'=> 'DESC');
+									$config = array (
+									'meta_key' => 'post_views_count',
+									'posts_per_page' => '6', 
+									'post_type' => 'pisos-laminados',
+									'orderby' => 'meta_value_num', 
+									'order'=> 'DESC');
 									$query_posts = new WP_Query($config);
 								?>
-								<div class="row flex-wrap my-10">
+								<div class="row flex-wrap mb-10">
 								<?php if(have_posts()):while($query_posts -> have_posts()):$query_posts -> the_post();?>
 								<a href="<?php the_permalink()?>">
 									<div class="card-produto">
@@ -70,24 +78,31 @@
 							</div>
 							<div x-show="activeTab === 'cortinas' || activeTab === 'allTabs'" class="cortinas">
 								<?php 
-									$config = array ('posts_per_page' => '6', 'post_type' => 'cortinas', 'order'=> 'DESC');
+									$config = array (
+										'posts_per_page' => '6', 
+										'post_type' => 'cortinas',
+										 'order'=> 'DESC');
 									$query_posts = new WP_Query($config);
 								?>
-								<div class="row flex-wrap my-10">
+									<header>
+										<h2>Cortinas e Persianas</h2>
+									</header>
+								<div class="row flex-wrap jc-around my-10">
 								<?php if(have_posts()):while($query_posts -> have_posts()):$query_posts -> the_post();?>
-								<a href="<?php the_permalink()?>">
+								<a href="<?php echo get_permalink(get_page_by_path("cortinas e persianas"))?>">
 									<div class="card-produto">
 										<div class="card-img mb-4">	
 											<img src="<?php the_field('produto_thumbmail'); ?>" 
 											alt="<?php the_field('texto_alternativo_thumbmail'); ?>">
 										</div>
-										<div class="card-content d-flex jc-between ai-center">
+										<!-- <div class="card-content d-flex jc-between ai-center">
 											<h3><?php the_title()?></h3>
 											<a class="d-flex jc-between ai-center" href="<?php the_permalink()?>">Saiba mais <img  class="icon" src="<?php echo get_template_directory_uri()?>/img/icon-saiba-mais.svg" alt=""></a>
-										</div>
+										</div> -->
 									</div>
 								</a>
 								<?php endwhile; endif; wp_reset_query()?>
+								<a class="card-moreInfo d-flex jc-center ai-center" href="<?php echo get_permalink(get_page_by_path("pisos laminados"))?>">Saiba mais <img  class="icon ml-1" src="<?php echo get_template_directory_uri()?>/img/icon-saiba-mais.svg" alt=""></a>
 								</div>
 							</div>
 						</div>

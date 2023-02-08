@@ -1,4 +1,4 @@
-<?// Template name: produtos?>
+<?// Template name: cortinas e persianas?>
 <?php get_header();?>
 <main id="pageSingle">
 	<section class="s-hero" style="background:url(<?php echo get_template_directory_uri()?>/img/bg-hero.jpg); background-repeat: no-repeat; background-size: cover;">
