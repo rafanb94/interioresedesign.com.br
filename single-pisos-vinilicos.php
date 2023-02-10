@@ -9,7 +9,7 @@
 				</div>
 				<div class="row flex-col jc-center ai-center">
 					<h1 class="txt-center"><?php the_title()?></h1>
-					<p class="txt-center" style="max-width:520px">Trabalhamos com as melhores marcas de Piso Laminado do mercado, com profissionais altamente capacitados e credenciados pelos fabricantes, preparados para a instalação desse material com rapidez e qualidade.</p>
+					<p class="txt-center" style="max-width:520px">O piso vinílico é um dos revestimentos mais versáteis que existe. Por esse motivo, ele está presente em vários cômodos da casa. Eles são uma ótima escolha para os projetos de arquitetura e decoração já que garantem conforto térmico e acústico, resistência a riscos e manchas, além do excelente custo-benefício.O piso vinílico Durafloor é resistente à água, feito à base de PVC 100% reciclável e ideal para quem não abre mão da beleza nem da praticidade.</p>
 				</div>
 			</div>
 		</div>
@@ -22,18 +22,18 @@
 						<header class="mb-3">
 							<h2>Descrição</h2>
 						</header>
-						<p class="mb-2">Na linha de Laminados você encontra padrões contemporâneos que ajudam a criar ambientes sofisticados e  acolhedores. Seus padrões madeirados criam uma sensação única de conforto e são ideais  para ambientes residenciais.</p>
+						<p class="mb-2">Se você está procurando por um piso durável, fácil de limpar e que oferece uma ampla gama de estilos e opções de cor, então os pisos vinílicos são a escolha perfeita para você. Aqui na interiores e design, oferecemos uma ampla seleção de pisos vinílicos de alta qualidade, com preços acessíveis e instalação fácil.</p>
 						</div>
 					<div class="row flex-col mt-5">
 						<header class="mb-3">
 							<h2>Benefícios</h2>
 						</header>
 						<ul>
-							<li>Feito com madeira reflorestada</li>
+							<li>Fácil de limpar</li>
+							<li>Não provoca alergias</li>
+							<li>Variedade de Texturas e padrões</li>
 							<li>Conforto acústico</li>
-							<li>Conforto térmico</li>
-							<li>Limpeza ainda mais fácil</li>
-							<li>Rápida instalação</li>
+							<li>Confortável em qualquer temperatura</li>
 							<li>Qualidade garantida Duratex</li>
 							<li>Proteção antibacteriana (Protekto)</li>
 							<li>Resistente a cupins</li>
@@ -43,7 +43,8 @@
 						<header class="mb-3">
 							<h2>Indicações</h2>
 						</header>
-						<p class="mb-2">Áreas residenciais de grande circulação como quartos, salas, corredores e halls.</p>	
+						<p class="mb-2">Áreas residenciais de grande circulação como quartos, salas, corredores e halls.</p>
+						<p>Áreas comerciais com grande circulação de pessoas como teatros, cinemas, casas de espetáculos, escolas, hotéis, shoppings</p>	
 					</div>
 					<div class="row flex-col mt-5">
 						<header class="mb-3">
