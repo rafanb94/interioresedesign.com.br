@@ -64,6 +64,7 @@
 				<ul>
 					<li><b>SITEMAP</b></li>
 					<li><a href="<?php echo get_permalink(get_page_by_path("pisos laminados"))?>">Piso Laminado</a></li>
+					<li><a href="<?php echo get_permalink(get_page_by_path("pisos vinilicos"))?>">Piso Vinilico</a></li>
 					<li><a href="<?php echo get_permalink(get_page_by_path("cortinas e persianas"))?>">Cortinas de Tecidos e Persianas</a></li>
 					<li><a href="<?php echo get_permalink(get_page_by_path("box de vidro"))?>">Box de Vidro</a></li>
 					<li><a href="<?php echo get_permalink(get_page_by_path("sobre"))?>">Sobre</a></li>
