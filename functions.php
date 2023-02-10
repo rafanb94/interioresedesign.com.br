@@ -12,6 +12,7 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action('admin_print_styles', 'print_emoji_styles');
 
 add_action('init', 'custom_post_type_pisos_laminados');
+add_action('init', 'custom_post_type_pisos_vinilicos');
 add_action('init','custom_post_type_cortinas');
 add_action('init','custom_post_type_persianas');
 add_action('init','custom_post_type_box_de_vidro');
@@ -49,6 +50,40 @@ function custom_post_type_pisos_laminados() {
 		)
 	));
 }
+function custom_post_type_pisos_vinilicos() {
+	register_post_type('pisos-vinilicos', array(
+		'label' => 'Pisos Vinilicos',
+		'description' => 'Pisos Vinilicos',
+		'public' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'capability_type' => 'post',
+		'map_meta_cap' => true,
+		'hierarchical' => false,
+		'taxonomies' => array( 'category' ),
+		'rewrite' => array('slug' => 'pisos-vinilicos', 'with_front' => true),
+		'query_var' => true,
+		'supports' => array('title', 'editor', 'page-attributes','post-formats'),
+		'menu_icon' => 'dashicons-category',
+
+		'labels' => array (
+			'name' => 'Pisos Vinilicos',
+			'singular_name' => 'Piso Vinilico',
+			'menu_name' => 'Pisos Vinilicos',
+			'add_new' => 'Adicionar Novo',
+			'add_new_item' => 'Adicionar Novo Piso Vinilico',
+			'edit' => 'Editar',
+			'edit_item' => 'Editar Piso Vinilico',
+			'new_item' => 'Novo Nome do Piso Vinilico',
+			'view' => 'Ver Pisos Vinilicos',
+			'view_item' => 'Ver Piso Vinilico',
+			'search_items' => 'Procurar Piso Vinilico',
+			'not_found' => 'Nenhum Piso Vinilico Encontrado',
+			'not_found_in_trash' => 'Nenhum Piso Vinilico Encontrado no Lixo',
+		)
+	));
+}
+
 function custom_post_type_cortinas() {
 	register_post_type('cortinas', array(
 		'label' => 'Cortinas',
@@ -113,7 +148,6 @@ function custom_post_type_persianas() {
 		)
 	));
 }
-
 function custom_post_type_box_de_vidro() {
 	register_post_type('box-de-vidro', array(
 		'label' => 'Box de Vidro',

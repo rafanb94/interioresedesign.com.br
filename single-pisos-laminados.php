@@ -49,7 +49,7 @@
 						<header class="mb-3">
 							<h2>Fornecedor</h2>
 						</header>
-						<img width=180 height=180 src="<?php echo get_template_directory_uri()?>/img/durafloor.jpg" alt="">
+						<img width=180 height=180 src="<?php the_field('single_provider'); ?>" alt="">
 					</div>
 				</div>
 				<div class="product-colors">
