@@ -30,7 +30,7 @@
 						<img class="ml-2" width=80 height=80 src="<?php the_field('page_provider_durafloor'); ?>" alt="">
 				</header>
 					<?php 
-						$config = array ('posts_per_page' => '6', 'post_type' => 'pisos-laminados', 'category_name' => 'durafloor', 'order'=> 'DESC');
+						$config = array ('posts_per_page' => '6', 'post_type' => 'pisos-vinilicos', 'category_name' => 'durafloor', 'order'=> 'DESC');
 						$query_posts = new WP_Query($config);
 					?>
 					<div class="grid mb-10">
@@ -56,7 +56,7 @@
 					<img class="ml-2" width=80 height=80 src="<?php the_field('page_provider_eucafloor'); ?>" alt="">
 				</header>
 					<?php 
-						$config = array ('posts_per_page' => '-1', 'post_type' => 'pisos-laminados', 'category_name' => 'eucafloor', 'order'=> 'DESC');
+						$config = array ('posts_per_page' => '-1', 'post_type' => 'pisos-vinilicos', 'category_name' => 'eucafloor', 'order'=> 'DESC');
 						$query_posts = new WP_Query($config);
 					?>
 					<div class="grid mb-10">

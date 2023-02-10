@@ -31,16 +31,16 @@
 										href="#pisoLaminado">
 										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/piso-laminado.png">Piso Laminado</div>
 								</li>
+								<li class="txt-center"><div @click.prevent="activeTab = 'pisoVinilico'"
+										:class="{ 'active': activeTab === 'pisoVinilico' }" 								
+										href="#">
+										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/piso-vinilico.png">Piso Vinílico</div>
+								</li>		
 								<li class="txt-center"><div @click.prevent="activeTab = 'cortinas'"
 										:class="{ 'active': activeTab === 'cortinas' }"
 										href="#cortinas">
 										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/cortinas-de-tecidos-e-persianas.png">Cortinas de tecidos</div>
-								</li>
-								<!-- <li class="txt-center"><div @click.prevent="activeTab = ''"
-										:class="{ 'active': activeTab === '' }" 								
-										href="#">
-										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/piso-vinilico.png">Piso Vinílico</div>
-								</li>							 -->
+								</li>					
 								<li class="txt-center"><div @click.prevent="activeTab = 'boxVidro'"
 										:class="{ 'active': activeTab === 'boxVidro' }" 								
 										href="#boxVidro">
@@ -83,6 +83,37 @@
 										</div>
 									<?php endwhile; endif; wp_reset_query()?>
 									<a class="card-moreInfo d-flex jc-center ai-center" href="<?php echo get_permalink(get_page_by_path("pisos laminados"))?>">Outros Modelos<img  class="icon ml-1" src="<?php echo get_template_directory_uri()?>/img/icon-saiba-mais.svg" alt=""></a>
+								</div>
+							</div>
+							<div x-show="activeTab === 'pisoVinilico' || activeTab === 'allTabs'" class="pisoVinilico">
+								<?php 
+									$config = array (
+									'meta_key' => 'post_views_count',
+									'posts_per_page' => '5', 
+									'post_type' => 'pisos-vinilicos',
+									'orderby' => 'meta_value_num', 
+									'order'=> 'DESC');
+									$query_posts = new WP_Query($config);
+								?>
+								<header class="product-title my-5">
+									<h2>Pisos Vinílicos</h2>
+								</header>
+								<div class="grid mb-10">
+									<?php if(have_posts()):while($query_posts -> have_posts()):$query_posts -> the_post();?>
+										<div class="card-produto">
+											<div class="card-img mb-4">	
+												<a href="<?php the_permalink();?>">
+													<img src="<?php the_field('single_product_thumbmail'); ?>" 
+													alt="<?php the_field('single_alt_text_thumbmail'); ?>"/>
+												</a>
+											</div>
+											<div class="card-content d-flex jc-between ai-center">
+												<h3><?php the_title()?></h3>
+												<a class="d-flex jc-between ai-center" href="<?php the_permalink()?>">Saiba mais <img  class="icon" src="<?php echo get_template_directory_uri()?>/img/icon-saiba-mais.svg" alt=""></a>
+											</div>
+										</div>
+									<?php endwhile; endif; wp_reset_query()?>
+									<a class="card-moreInfo d-flex jc-center ai-center" href="<?php echo get_permalink(get_page_by_path("pisos vinilicos"))?>">Outros Modelos<img  class="icon ml-1" src="<?php echo get_template_directory_uri()?>/img/icon-saiba-mais.svg" alt=""></a>
 								</div>
 							</div>
 

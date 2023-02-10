@@ -56,11 +56,11 @@
 								<a class="menu-desktop__link" href="<?php echo get_permalink(get_page_by_path("pisos laminados"))?>">Piso Laminado</a>
 							</li>
 							<li class="menu-desktop__item p-1 ml-3">
+								<a class="menu-desktop__link" href="<?php echo get_permalink(get_page_by_path("pisos vinilicos"))?>">Piso Vinílico</a>
+							</li>
+							<li class="menu-desktop__item p-1 ml-3">
 								<a class="menu-desktop__link" href="<?php echo get_permalink(get_page_by_path("cortinas e persianas"))?>">Cortinas de tecidos e Persianas</a>
 							</li>
-							<!-- <li class="menu-desktop__item p-1 ml-3">
-								<a class="menu-desktop__link" href="">Piso Vinílico</a>
-							</li> -->
 							<li class="menu-desktop__item p-1 ml-3">
 								<a class="menu-desktop__link" href="<?php echo get_permalink(get_page_by_path("box de vidro"))?>">Box de Vidro</a>
 							</li>
@@ -78,6 +78,9 @@
 					</li>
 					<li class="menu-mobile__item py-1">
 						<a class="menu-mobile__link" href="<?php echo get_permalink(get_page_by_path("pisos laminados"))?>">Pisos Laminados</a>
+					</li>
+					<li class="menu-mobile__item py-1">
+						<a class="menu-mobile__link" href="<?php echo get_permalink(get_page_by_path("pisos vinilicos"))?>">Pisos Vinilicos</a>
 					</li>
 					<li class="menu-mobile__item py-1">
 						<a class="menu-mobile__link" href="<?php echo get_permalink(get_page_by_path("cortinas e persianas"))?>">Cortinas e Persianas</a>
