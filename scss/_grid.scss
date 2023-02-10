@@ -27,7 +27,7 @@ $gutter: 1.6rem;
   display: grid;
   row-gap: var(--row-gap);
   column-gap: var(--column-gap);
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 410px));
+  grid-template-columns: repeat(auto-fit, minmax(var(--min), 410px));
   @media screen and (max-width: 960px) {
    justify-items: center;
   }
