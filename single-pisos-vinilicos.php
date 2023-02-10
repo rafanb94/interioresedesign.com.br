@@ -34,9 +34,6 @@
 							<li>Variedade de Texturas e padrões</li>
 							<li>Conforto acústico</li>
 							<li>Confortável em qualquer temperatura</li>
-							<li>Qualidade garantida Duratex</li>
-							<li>Proteção antibacteriana (Protekto)</li>
-							<li>Resistente a cupins</li>
 						</ul>
 					</div>
 					<div class="row flex-col mt-5">
