@@ -47,8 +47,13 @@
 			<div class="row flex-col ai-center">
 				<img src="<?php echo get_template_directory_uri()?>/img/logo-interior-e-design.svg" alt="">
 				<h2 class="txt-center">Construímos a casa ou</br>escrítório dos seus sonhos</h2>
+				<?php if(!is_page("Home")) {?>
 				<a class="btn btn-primary--lg" 
-					href="https://wa.me/5511976747309?text=Gostaria%20de%20um%20orçamento%20do%20produto%20<?php the_title()?>">solicitar orçamento</a>
+					href="https://wa.me/5511987094252?text=Gostaria%20de%20um%20orçamento%20do%20produto%20<?php the_title()?>">solicitar orçamento</a>
+				<?php } else {?>
+					<a class="btn btn-primary--lg" 
+					href="https://wa.me/5511987094252?text=Gostaria%20de%20um%20orçamento">solicitar orçamento</a>
+				<?php }?>
 			</div>
 		</div>
 	</section>
@@ -58,25 +63,26 @@
 			<div class="sitemap">
 				<ul>
 					<li><b>SITEMAP</b></li>
-					<li><a href="">Produtos</a></li>
-					<li><a href="">Contato</a></li>
-					<li><a href="">Fornecedores</a></li>
-					<li><a href="">Localização</a></li>
+					<li><a href="<?php echo get_permalink(get_page_by_path("pisos laminados"))?>">Piso Laminado</a></li>
+					<li><a href="<?php echo get_permalink(get_page_by_path("cortinas e persianas"))?>">Cortinas de Tecidos e Persianas</a></li>
+					<li><a href="<?php echo get_permalink(get_page_by_path("box de vidro"))?>">Box de Vidro</a></li>
+					<li><a href="<?php echo get_permalink(get_page_by_path("sobre"))?>">Sobre</a></li>
 				</ul>
 			</div>
-			<div class="categorias">
+			<!-- <div class="categorias">
 				<ul>
 					<li><b>CATEGORIAS</b></li>
 				</ul>
-				</div>
-				<div class="footer-contato">
-					<ul>
-						<li><b>CONTATO</b></li>
-						<li><a href="">(11) 2954-5400</a></li>
-						<li><a href="">(11) 97674 7309</a></li>
-					</ul>
-				</div>
+			</div> -->
+			<div class="footer-contato">
+				<ul>
+					<li><b>CONTATO</b></li>
+					<li>(11) 2094-6628</li>
+					<li>(11) 2227-1255</li>
+					<li>(11) 11 98709-4252</li>
+				</ul>
 			</div>
+		</div>
 		</div>
 	</footer>
 		<script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>

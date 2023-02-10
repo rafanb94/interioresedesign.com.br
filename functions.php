@@ -30,6 +30,7 @@ function custom_post_type_pisos_laminados() {
 		'rewrite' => array('slug' => 'pisos-laminados', 'with_front' => true),
 		'query_var' => true,
 		'supports' => array('title', 'editor', 'page-attributes','post-formats'),
+		'menu_icon' => 'dashicons-category',
 
 		'labels' => array (
 			'name' => 'Piso Laminados',
@@ -61,7 +62,7 @@ function custom_post_type_cortinas() {
 		'rewrite' => array('slug' => 'cortinas', 'with_front' => true),
 		'query_var' => true,
 		'supports' => array('title', 'editor', 'page-attributes','post-formats'),
-    'menu_icon' => 'dashicons-tag',
+    'menu_icon' => 'dashicons-category',
 
 		'labels' => array (
 			'name' => 'Cortinas',
@@ -93,7 +94,7 @@ function custom_post_type_persianas() {
 		'rewrite' => array('slug' => 'persianas', 'with_front' => true),
 		'query_var' => true,
 		'supports' => array('title', 'editor', 'page-attributes','post-formats'),
-    'menu_icon' => 'dashicons-tag',
+    'menu_icon' => 'dashicons-category',
 
 		'labels' => array (
 			'name' => 'Persianas',
@@ -126,7 +127,7 @@ function custom_post_type_box_de_vidro() {
 		'rewrite' => array('slug' => 'box-de-vidro', 'with_front' => true),
 		'query_var' => true,
 		'supports' => array('title', 'editor', 'page-attributes','post-formats'),
-    'menu_icon' => 'dashicons-tag',
+    'menu_icon' => 'dashicons-category',
 
 		'labels' => array (
 			'name' => 'Box de Vidro',

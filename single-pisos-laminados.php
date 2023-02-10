@@ -5,7 +5,7 @@
 		<div class="container">
 			<div class="row jc-between">
 				<div class="row">
-					<img src="<?php the_field('produto_image_background'); ?>" alt="<?php the_field('texto_alternativo_produto_image_background'); ?>">
+					<img class="bg-image" src="<?php the_field('single_product_image_background'); ?>" alt="<?php the_field('single_alt_text_image_background'); ?>">
 				</div>
 				<div class="row flex-col jc-center ai-center">
 					<h1 class="txt-center"><?php the_title()?></h1>
@@ -22,9 +22,8 @@
 						<header class="mb-3">
 							<h2>Descrição</h2>
 						</header>
-						<p class="mb-2">Na linha Durafloor Link você encontra padrões contemporâneos que ajudam a criar ambientes sofisticados e  acolhedores. Seus padrões madeirados criam uma sensação única de conforto e são ideais  para ambientes residenciais.</p>
-						<p>Categoria: Pisos Laminados Tags: Linha Link, piso laminado Linha Link, pisos laminado, pisos laminados duratex, pisos laminados para residência</p>
-					</div>
+						<p class="mb-2">Na linha de Laminados você encontra padrões contemporâneos que ajudam a criar ambientes sofisticados e  acolhedores. Seus padrões madeirados criam uma sensação única de conforto e são ideais  para ambientes residenciais.</p>
+						</div>
 					<div class="row flex-col mt-5">
 						<header class="mb-3">
 							<h2>Benefícios</h2>
@@ -55,7 +54,7 @@
 				</div>
 				<div class="product-colors">
 					<div class="container">
-						<img src="<?php the_field('tipos_de_piso'); ?>" alt="">
+						<img src="<?php the_field('single_types_floor'); ?>" alt="">
 					</div>
 				</div>
 			</div>

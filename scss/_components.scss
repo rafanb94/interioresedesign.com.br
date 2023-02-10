@@ -29,3 +29,28 @@
   font-family: 'Playfair Display', serif;
   font-weight: 700;
 }
+.card-moreInfo {
+  width: 41rem;
+  height: 19.7rem;
+  background-color: $primary-80;
+  color: $primary-20;
+  font-size: 2.4rem;
+  border-radius: .8rem;
+}
+.card-produto {
+  max-width: 41rem;
+  h3 {
+    max-width: 29.4rem;
+  }
+  a {
+    color: $primary-40;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+  }
+  .icon {
+    margin-left: 1.6rem;
+  }
+}
+.card-img img {
+  border-radius: .8rem;
+}

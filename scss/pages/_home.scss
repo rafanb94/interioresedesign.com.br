@@ -34,44 +34,12 @@
   } 
 }
 .s-produtos {
-  // .tabnav {
-  //   overflow: scroll;
-  // }
   .active {
     padding: .8rem;
     border: 1px solid $primary-80;
     border-radius: .8rem;
     overflow:hidden;
     transition: all .3s ease-in-out;
-  }
-  .pisoLaminado {
-    .row {
-      gap: 4rem 1rem;
-      justify-content: start;
-    }
-  }
-  .card-moreInfo {
-    width: 41rem;
-    height: 19.7rem;
-    background-color: $primary-80;
-    color: $primary-20;
-    font-size: 2.4rem;
-    border-radius: .8rem;
-  }
-  .card-produto {
-    max-width: 41rem;
-    h3 {
-      max-width: 29.6rem;
-    }
-    a {
-      color: $primary-40;
-    }
-    .icon {
-      margin-left: 1.6rem;
-    }
-  }
-  .card-img img {
-    border-radius: .8rem;
   }
 }
 .s-catalogos {
@@ -159,13 +127,18 @@
     max-width: 12.4rem;
     transition: all ease-out;
   }
-.tabnav {
+  .tabnav {
   overflow: scroll;
     ul {
       gap: 0 1.6rem;
       width: max-content;
     }
   }
-}
-
+  h2 {
+    text-align: center;
+    }
+  }
+  .bg-image {
+    display: none;
+  }
 }

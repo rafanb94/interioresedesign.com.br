@@ -12,6 +12,13 @@
     p {
       color:$primary-99;  
     }
+    @media screen and (max-width: 960px) {
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+      .bg-image {
+        display: none;
+      }
+    }
   }
   .s-product {
     .product-content{
@@ -22,4 +29,4 @@
       }
     }
   }
-} 
+}

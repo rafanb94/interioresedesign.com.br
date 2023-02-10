@@ -9,10 +9,28 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/plugins.min.css"/>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/style.min.css"/>
+		<link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri()?>/favicon.svg">
 		<!-- Primary Meta Tags -->
-		<title><?php wp_title( '|', true, 'right' );?><?php bloginfo( 'name' )?></title>
-		<meta name="title" content="<?php wp_title( '|', true, 'right' );?><?php bloginfo( 'name' )?>">
-    <?php wp_head();?>
+		<!-- <title><?php wp_title( '|', true, 'right' );?><?php bloginfo( 'name' )?></title>
+		<meta name="title" content="<?php wp_title( '|', true, 'right' );?><?php bloginfo( 'name' )?>"> -->
+		<title>Os melhores itens para sua casa e escritório | Interior e Design</title>
+		<meta name="title" content="Os melhores itens para sua casa e escritório | Interior e Design">
+		<meta name="description" content="Conheça nosso catálogo de Pisos Laminados, Cortinas de tecidos e Persianas, Pisos Vinílico e Box de Vidro - Entre em contato - (11) 98709-4252.">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://interioresedesign.com.br/">
+		<meta property="og:title" content="Os melhores itens para sua casa e escritório | Interior e Design">
+		<meta property="og:description" content="Conheça nosso catálogo de Pisos Laminados, Cortinas de tecidos e Persianas, Pisos Vinílico e Box de Vidro - Entre em contato - (11) 98709-4252.">
+		<meta property="og:image" content="<?php echo get_template_directory_uri()?>/social-share.jpg">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="http://interioresedesign.com.br/">
+		<meta property="twitter:title" content="Os melhores itens para sua casa e escritório | Interior e Design">
+		<meta property="twitter:description" content="Conheça nosso catálogo de Pisos Laminados, Cortinas de tecidos e Persianas, Pisos Vinílico e Box de Vidro - Entre em contato - (11) 98709-4252.">
+		<meta property="twitter:image" content="<?php echo get_template_directory_uri()?>/social-share.jpg">
+		<?php wp_head();?>
 	</head>
 	<body>
 	<header id="js-header" class="header">
@@ -38,17 +56,17 @@
 								<a class="menu-desktop__link" href="<?php echo get_permalink(get_page_by_path("pisos laminados"))?>">Piso Laminado</a>
 							</li>
 							<li class="menu-desktop__item p-1 ml-3">
-								<a class="menu-desktop__link" href="">Cortinas de tecidos e Persianas</a>
-							</li>
-							<li class="menu-desktop__item p-1 ml-3">
-								<a class="menu-desktop__link" href="">Piso Vinílico</a>
-							</li>
-							<li class="menu-desktop__item p-1 ml-3">
-								<a class="menu-desktop__link" href="">Box de Vidro</a>
+								<a class="menu-desktop__link" href="<?php echo get_permalink(get_page_by_path("cortinas e persianas"))?>">Cortinas de tecidos e Persianas</a>
 							</li>
 							<!-- <li class="menu-desktop__item p-1 ml-3">
-								<a class="menu-desktop__link" href="">Molduras de Isopor</a>
+								<a class="menu-desktop__link" href="">Piso Vinílico</a>
 							</li> -->
+							<li class="menu-desktop__item p-1 ml-3">
+								<a class="menu-desktop__link" href="<?php echo get_permalink(get_page_by_path("box de vidro"))?>">Box de Vidro</a>
+							</li>
+							<li class="menu-desktop__item p-1 ml-3">
+								<a class="menu-desktop__link" href="<?php echo get_permalink(get_page_by_path("sobre"))?>">Sobre</a>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -59,16 +77,16 @@
 						<a class="menu-mobile__link" href="/">Home</a>
 					</li>
 					<li class="menu-mobile__item py-1">
-						<a class="menu-mobile__link" href="#produtos">Produtos</a>
+						<a class="menu-mobile__link" href="<?php echo get_permalink(get_page_by_path("pisos laminados"))?>">Pisos Laminados</a>
 					</li>
 					<li class="menu-mobile__item py-1">
-						<a class="menu-mobile__link" href="#contato">Contato</a>
+						<a class="menu-mobile__link" href="<?php echo get_permalink(get_page_by_path("cortinas e persianas"))?>">Cortinas e Persianas</a>
 					</li>
 					<li class="menu-mobile__item py-1">
-						<a class="menu-mobile__link" href="#localizacao">Localizaçao</a>
+						<a class="menu-mobile__link" href="<?php echo get_permalink(get_page_by_path("box de vidro"))?>">Box de Vidro</a>
 					</li>
 					<li class="menu-mobile__item py-1">
-						<a class="menu-mobile__link" href="fornecedores">Fornecedores</a>
+						<a class="menu-mobile__link" href="<?php echo get_permalink(get_page_by_path("sobre"))?>">Sobre</a>
 					</li>
 				</ul>
 			</nav>

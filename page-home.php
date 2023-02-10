@@ -5,7 +5,7 @@
 				<div class="container">
 					<div class="row flex-col ai-center">
 						<h1 class="txt-center">A melhor escolha para a<span style="display:block"><span style="color:#99D85C;">sua casa</span> e o <span style="color:#99D85C;">seu escritório</span></span></h1>
-						<a class="btn btn-primary--lg" href="#">Entre em contato</a>
+						<a class="btn btn-primary--lg" href="https://wa.me/5511987094252?text=Gostaria%20de%20um%20orçamento">Entre em contato</a>
 						<h2 class="txt-center">Veja também nossos catálogos de produtos <span style="display:block">dos mais diversos modelos e gostos.</span></h2>
 					</div>
 				</div>
@@ -16,93 +16,125 @@
 					<div x-data="{ activeTab: 'allTabs' }" class="allTabs">
 						<nav class="tabnav">
 							<ul class="d-flex ai-center jc-between">
-								<li class="txt-center"><div @click.prevent="activeTab = 'allTabs'" :class="{ 'active': activeTab === 'allTabs' }" href="#allTabs">
+								<li class="txt-center"><div @click.prevent="activeTab = 'allTabs'" 
+									:class="{ 'active': activeTab === 'allTabs' }" 
+									href="#allTabs">
 									<img class=" m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/products-menu-icon.png" alt="">Exibir todos</div>
 								</li>
 								<!-- <li class="txt-center"><div @click.prevent="activeTab = 'papeisParede'"
-										:class="{ 'active': activeTab === 'papeisParede' }" 								href="#papeisParede">
+										:class="{ 'active': activeTab === 'papeisParede' }" 								
+										href="#papeisParede">
 										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/papeis-de-paredes.png">Papéis de Parede</div>
 								</li> -->
 								<li class="txt-center"><div @click.prevent="activeTab = 'pisoLaminado'"
-										:class="{ 'active': activeTab === 'pisoLaminado' }" 								href="#pisoLaminado">
+										:class="{ 'active': activeTab === 'pisoLaminado' }" 								
+										href="#pisoLaminado">
 										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/piso-laminado.png">Piso Laminado</div>
 								</li>
 								<li class="txt-center"><div @click.prevent="activeTab = 'cortinas'"
-										:class="{ 'active': activeTab === 'cortinas' }" 								href="#cortinas">
+										:class="{ 'active': activeTab === 'cortinas' }"
+										href="#cortinas">
 										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/cortinas-de-tecidos-e-persianas.png">Cortinas de tecidos</div>
 								</li>
-								<li class="txt-center"><div @click.prevent="activeTab = ''"
-										:class="{ 'active': activeTab === '' }" 								href="#papeisParede">
+								<!-- <li class="txt-center"><div @click.prevent="activeTab = ''"
+										:class="{ 'active': activeTab === '' }" 								
+										href="#">
 										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/piso-vinilico.png">Piso Vinílico</div>
-								</li>							
-								<li class="txt-center"><div @click.prevent="activeTab = ''"
-										:class="{ 'active': activeTab === '' }" 								href="#papeisParede">
+								</li>							 -->
+								<li class="txt-center"><div @click.prevent="activeTab = 'boxVidro'"
+										:class="{ 'active': activeTab === 'boxVidro' }" 								
+										href="#boxVidro">
 										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/box-de-vidro.png">Box de Vidro</div>
 								</li>	
 								<!-- <li class="txt-center"><div @click.prevent="activeTab = ''"
-										:class="{ 'active': activeTab === '' }" 								href="#papeisParede">
+										:class="{ 'active': activeTab === '' }" 								
+										href="#papeisParede">
 										<img class="m-auto pb-1" src="<?php echo get_template_directory_uri()?>/img/molduras-de-isopor.png">Molduras de Isopor</div>
 								</li>																	 -->
 							</ul>
 						</nav>
 						<div class="row flex-col"> 
 							<div x-show="activeTab === 'pisoLaminado' || activeTab === 'allTabs'" class="pisoLaminado">
-								<header class="product-title my-5">
-									<h2>Pisos Laminados</h2>
-								</header>
 								<?php 
 									$config = array (
 									'meta_key' => 'post_views_count',
-									'posts_per_page' => '6', 
+									'posts_per_page' => '5', 
 									'post_type' => 'pisos-laminados',
 									'orderby' => 'meta_value_num', 
 									'order'=> 'DESC');
 									$query_posts = new WP_Query($config);
 								?>
-								<div class="row flex-wrap mb-10">
-								<?php if(have_posts()):while($query_posts -> have_posts()):$query_posts -> the_post();?>
-								<a href="<?php the_permalink()?>">
-									<div class="card-produto">
-										<div class="card-img mb-4">	
-											<img src="<?php the_field('produto_thumbmail'); ?>" 
-											alt="<?php the_field('texto_alternativo_thumbmail'); ?>">
+								<header class="product-title my-5">
+									<h2>Pisos Laminados</h2>
+								</header>
+								<div class="grid mb-10">
+									<?php if(have_posts()):while($query_posts -> have_posts()):$query_posts -> the_post();?>
+										<div class="card-produto">
+											<div class="card-img mb-4">	
+												<a href="<?php the_permalink();?>">
+													<img src="<?php the_field('single_product_thumbmail'); ?>" 
+													alt="<?php the_field('single_alt_text_thumbmail'); ?>"/>
+												</a>
+											</div>
+											<div class="card-content d-flex jc-between ai-center">
+												<h3><?php the_title()?></h3>
+												<a class="d-flex jc-between ai-center" href="<?php the_permalink()?>">Saiba mais <img  class="icon" src="<?php echo get_template_directory_uri()?>/img/icon-saiba-mais.svg" alt=""></a>
+											</div>
 										</div>
-										<div class="card-content d-flex jc-between ai-center">
-											<h3><?php the_title()?></h3>
-											<a class="d-flex jc-between ai-center" href="<?php the_permalink()?>">Saiba mais <img  class="icon" src="<?php echo get_template_directory_uri()?>/img/icon-saiba-mais.svg" alt=""></a>
-										</div>
-									</div>
-								</a>
-								<?php endwhile; endif; wp_reset_query()?>
+									<?php endwhile; endif; wp_reset_query()?>
+									<a class="card-moreInfo d-flex jc-center ai-center" href="<?php echo get_permalink(get_page_by_path("pisos laminados"))?>">Outros Modelos<img  class="icon ml-1" src="<?php echo get_template_directory_uri()?>/img/icon-saiba-mais.svg" alt=""></a>
 								</div>
 							</div>
+
 							<div x-show="activeTab === 'cortinas' || activeTab === 'allTabs'" class="cortinas">
 								<?php 
 									$config = array (
-										'posts_per_page' => '6', 
+										'posts_per_page' => '5', 
 										'post_type' => 'cortinas',
-										 'order'=> 'DESC');
+										 'order'=> 'ASC');
 									$query_posts = new WP_Query($config);
 								?>
-									<header>
-										<h2>Cortinas e Persianas</h2>
-									</header>
-								<div class="row flex-wrap jc-around my-10">
-								<?php if(have_posts()):while($query_posts -> have_posts()):$query_posts -> the_post();?>
-								<a href="<?php echo get_permalink(get_page_by_path("cortinas e persianas"))?>">
-									<div class="card-produto">
-										<div class="card-img mb-4">	
-											<img src="<?php the_field('produto_thumbmail'); ?>" 
-											alt="<?php the_field('texto_alternativo_thumbmail'); ?>">
+								<header>
+									<h2>Cortinas e Persianas</h2>
+								</header>
+								<div class="grid my-5">
+									<?php if(have_posts()):while($query_posts -> have_posts()):$query_posts -> the_post();?>
+										<div class="card-produto">
+											<div class="card-img">	
+												<a href="<?php echo get_permalink(get_page_by_path("cortinas e persianas"))?>">
+													<img src="<?php the_field('custompost_image_background'); ?>" 
+													alt="<?php the_field('custompost_alt_text_thumbmail'); ?>">
+												</a>
+											</div>
 										</div>
-										<!-- <div class="card-content d-flex jc-between ai-center">
-											<h3><?php the_title()?></h3>
-											<a class="d-flex jc-between ai-center" href="<?php the_permalink()?>">Saiba mais <img  class="icon" src="<?php echo get_template_directory_uri()?>/img/icon-saiba-mais.svg" alt=""></a>
-										</div> -->
+									<?php endwhile; endif; wp_reset_query()?>
+									<a class="card-moreInfo d-flex jc-center ai-center" href="<?php echo get_permalink(get_page_by_path("cortinas e persianas"))?>">Saiba mais <img  class="icon ml-1" src="<?php echo get_template_directory_uri()?>/img/icon-saiba-mais.svg" alt=""></a>
+								</div>
+							</div>
+
+							<div x-show="activeTab === 'boxVidro' || activeTab === 'allTabs'" class="boxVidro">
+								<?php 
+									$config = array (
+										'posts_per_page' => '5', 
+										'post_type' => 'box-de-vidro',
+										 'order'=> 'ASC');
+									$query_posts = new WP_Query($config);
+								?>
+								<header>
+									<h2>Box de Vidro</h2>
+								</header>
+								<div class="grid my-5">
+									<?php if(have_posts()):while($query_posts -> have_posts()):$query_posts -> the_post();?>
+									<div class="card-produto">
+										<div class="card-img">	
+											<a href="<?php echo get_permalink(get_page_by_path("box de vidro"))?>">
+												<img width="410" height="197" 	src="<?php the_field('custompost_image_background'); ?>" 
+												alt="<?php the_field('custompost_alt_text_thumbmail'); ?>">
+											</a>
+										</div>
 									</div>
-								</a>
-								<?php endwhile; endif; wp_reset_query()?>
-								<a class="card-moreInfo d-flex jc-center ai-center" href="<?php echo get_permalink(get_page_by_path("pisos laminados"))?>">Saiba mais <img  class="icon ml-1" src="<?php echo get_template_directory_uri()?>/img/icon-saiba-mais.svg" alt=""></a>
+									<?php endwhile; endif; wp_reset_query()?>
+									<a class="card-moreInfo d-flex jc-center ai-center" href="<?php echo get_permalink(get_page_by_path("box de vidro"))?>">Saiba mais <img  class="icon ml-1" src="<?php echo get_template_directory_uri()?>/img/icon-saiba-mais.svg" alt=""></a>
 								</div>
 							</div>
 						</div>

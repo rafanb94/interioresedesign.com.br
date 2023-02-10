@@ -5,7 +5,7 @@
 		<div class="container">
 			<div class="row jc-between">
 				<div class="row">
-					<img src="<?php echo get_template_directory_uri()?>/img/bg-linha-link.jpg" alt="">
+					<img class="bg-image" src="<?php echo get_template_directory_uri()?>/img/bg-linha-link.jpg" alt="">
 				</div>
 				<div class="row flex-col jc-center ai-center">
 					<h1 class="txt-center">A Empresa</h1>

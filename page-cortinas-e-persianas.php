@@ -5,58 +5,68 @@
 		<div class="container">
 			<div class="row jc-between">
 				<div class="row">
-					<img src="<?php the_field('produto_image_background'); ?>" alt="<?php the_field('texto_alternativo_produto_image_background'); ?>">
+					<img class="bg-image" src="<?php the_field('page_image_background'); ?>" alt="<?php the_field('page_alt_text_background'); ?>">
 				</div>
 				<div class="row flex-col jc-center ai-center">
 					<h1 class="txt-center"><?php the_title()?></h1>
-					<p class="txt-center" style="max-width:520px">Trabalhamos com as melhores marcas de Piso Laminado do mercado, com profissionais altamente capacitados e credenciados pelos fabricantes, preparados para a instalação desse material com rapidez e qualidade.</p>
+					<p class="txt-center" style="max-width:520px">Para sua casa , escritório ou fábrica, Persiana vertical, horizontal de tecido, P.V.C ou alumínio.
+						Fabricado com o maior controle de qualidade, reunindo beleza, durabilidade e sofisticação deixando o ambiente leve e agradável.</p>
 				</div>
 			</div>
 		</div>
 	</section>
+	<section class="description mt-10">
+		<div class="container">
+			<header class="mb-3">
+				<h2>Descrição</h2>
+			</header>
+			<p class="mb-2" style="max-width:600px;">As cortinas e persianas são elementos decorativos e funcionais que proporcionam privacidade, sombreamento e controle da luz natural em ambientes internos. Além disso, também são uma ótima opção para dar um toque de estilo e personalidade aos cômodos da sua casa ou escritório.</p>
+		</div>
+	</section>
 	<section class="s-product mt-10">
 		<div class="container">
-			<div class="row jc-between">
-				<div class="product-content">
-					<div class="row flex-col">
-						<header class="mb-3">
-							<h2>Descrição</h2>
-						</header>
-						<p class="mb-2">Na linha Durafloor Link você encontra padrões contemporâneos que ajudam a criar ambientes sofisticados e  acolhedores. Seus padrões madeirados criam uma sensação única de conforto e são ideais  para ambientes residenciais.</p>
-						<p>Categoria: Pisos Laminados Tags: Linha Link, piso laminado Linha Link, pisos laminado, pisos laminados duratex, pisos laminados para residência</p>
-					</div>
-					<div class="row flex-col mt-5">
-						<header class="mb-3">
-							<h2>Benefícios</h2>
-						</header>
-						<ul>
-							<li>Feito com madeira reflorestada</li>
-							<li>Conforto acústico</li>
-							<li>Conforto térmico</li>
-							<li>Limpeza ainda mais fácil</li>
-							<li>Rápida instalação</li>
-							<li>Qualidade garantida Duratex</li>
-							<li>Proteção antibacteriana (Protekto)</li>
-							<li>Resistente a cupins</li>
-						</ul>
-					</div>
-					<div class="row flex-col mt-5">
-						<header class="mb-3">
-							<h2>Indicações</h2>
-						</header>
-						<p class="mb-2">Áreas residenciais de grande circulação como quartos, salas, corredores e halls.</p>	
-					</div>
-					<div class="row flex-col mt-5">
-						<header class="mb-3">
-							<h2>Fornecedor</h2>
-						</header>
-						<img width=180 height=180 src="<?php echo get_template_directory_uri()?>/img/durafloor.jpg" alt="">
-					</div>
+			<div class="cortinas">
+				<header class="product-title my-5">
+					<h2>Cortinas</h2>
+				</header>
+				<?php 
+					$config = array (
+					'posts_per_page' => '-1', 
+					'post_type' => 'cortinas',
+					'order'=> 'ASC');
+					$query_posts = new WP_Query($config);
+				?>
+				<div class="grid my-5">
+					<?php if(have_posts()):while($query_posts -> have_posts()):$query_posts -> the_post();?>
+						<div class="card-produto">
+							<div class="card-img">	
+								<img width="410" height="197" 	src="<?php the_field('custompost_image_background'); ?>" 
+									alt="<?php the_field('custompost_alt_text_thumbmail'); ?>">
+							</div>
+						</div>
+					<?php endwhile; endif; wp_reset_query()?>
 				</div>
-				<div class="product-colors">
-					<div class="container">
-						<img src="<?php the_field('tipos_de_piso'); ?>" alt="">
-					</div>
+			</div>
+			<div class="persianas mt-10">
+				<header class="product-title my-5">
+					<h2>Persianas</h2>
+				</header>
+				<?php 
+					$config = array (
+					'posts_per_page' => '-1', 
+					'post_type' => 'persianas',
+					'order'=> 'ASC');
+					$query_posts = new WP_Query($config);
+				?>
+				<div class="grid my-5">
+					<?php if(have_posts()):while($query_posts -> have_posts()):$query_posts -> the_post();?>
+						<div class="card-produto">
+							<div class="card-img">	
+								<img width="410" height="197" 	src="<?php the_field('custompost_image_background'); ?>" 
+									alt="<?php the_field('custompost_alt_text_thumbmail'); ?>">
+							</div>
+						</div>
+					<?php endwhile; endif; wp_reset_query()?>
 				</div>
 			</div>
 		</div>
