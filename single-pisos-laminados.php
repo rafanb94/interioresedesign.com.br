@@ -50,7 +50,7 @@
 					<header>
 						<h2>Cores Disponíveis</h2>
 					</header>
-						<div class="grid mt-5">
+						<div class="grid-colors mt-5">
 							<div class="color">	
 								<img src="<?php the_field('single_image_color_1');?>" alt="">
 								<header>
