@@ -61,6 +61,72 @@
 									<h3><?php the_field('single_name_color_1'); ?></h3>
 								</header>
 							</div>
+							<div class="color">	
+								<img src="<?php the_field('single_image_color_2');?>" alt="">
+								<header>
+									<h3><?php the_field('single_name_color_2'); ?></h3>
+								</header>
+							</div>
+							<div class="color">	
+								<img src="<?php the_field('single_image_color_3');?>" alt="">
+								<header>
+									<h3><?php the_field('single_name_color_3'); ?></h3>
+								</header>
+							</div>
+							<div class="color">	
+								<img src="<?php the_field('single_image_color_4');?>" alt="">
+								<header>
+									<h3><?php the_field('single_name_color_4'); ?></h3>
+								</header>
+							</div>
+							<div class="color">	
+								<img src="<?php the_field('single_image_color_5');?>" alt="">
+								<header>
+									<h3><?php the_field('single_name_color_5'); ?></h3>
+								</header>
+							</div>
+							<div class="color">	
+								<img src="<?php the_field('single_image_color_6');?>" alt="">
+								<header>
+									<h3><?php the_field('single_name_color_6'); ?></h3>
+								</header>
+							</div>
+							<div class="color">	
+								<img src="<?php the_field('single_image_color_7');?>" alt="">
+								<header>
+									<h3><?php the_field('single_name_color_7'); ?></h3>
+								</header>
+							</div>
+							<div class="color">	
+								<img src="<?php the_field('single_image_color_8');?>" alt="">
+								<header>
+									<h3><?php the_field('single_name_color_8'); ?></h3>
+								</header>
+							</div>
+							<div class="color">	
+								<img src="<?php the_field('single_image_color_9');?>" alt="">
+								<header>
+									<h3><?php the_field('single_name_color_9'); ?></h3>
+								</header>
+							</div>
+							<div class="color">	
+								<img src="<?php the_field('single_image_color_10');?>" alt="">
+								<header>
+									<h3><?php the_field('single_name_color_10'); ?></h3>
+								</header>
+							</div>
+							<div class="color">	
+								<img src="<?php the_field('single_image_color_11');?>" alt="">
+								<header>
+									<h3><?php the_field('single_name_color_11'); ?></h3>
+								</header>
+							</div>
+							<div class="color">	
+								<img src="<?php the_field('single_image_color_12');?>" alt="">
+								<header>
+									<h3><?php the_field('single_name_color_12'); ?></h3>
+								</header>
+							</div>
 						</div>
 				</div>
 			</div>
