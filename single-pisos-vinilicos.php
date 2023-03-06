@@ -56,9 +56,9 @@
 					</header>
 						<div class="grid mt-5">
 							<div class="color">	
-								<img src="<?php the_field('single_color_1');?>" alt="">
+								<img src="<?php the_field('single_image_color_1');?>" alt="">
 								<header>
-									<h3><?php the_field('single_color_name_1'); ?></h3>
+									<h3><?php the_field('single_name_color_1'); ?></h3>
 								</header>
 							</div>
 						</div>
