@@ -3,27 +3,23 @@
 <main id="pageSingle">
 	<section class="s-hero" style="background:url(<?php echo get_template_directory_uri()?>/img/bg-hero.jpg); background-repeat: no-repeat; background-size: cover;">
 		<div class="container">
-			<div class="row jc-between">
+			<div class="row jc-center">
 				<div class="row">
 					<img class="bg-image" src="<?php the_field('page_image_background'); ?>" alt="<?php the_field('page_alt_text_background'); ?>">
-				</div>
-				<div class="row flex-col jc-center ai-center">
-					<h1 class="txt-center"><?php the_title()?></h1>
-					<p class="txt-center" style="max-width:520px">Trabalhamos com as melhores marcas de Piso Laminado do mercado, com profissionais altamente capacitados e credenciados pelos fabricantes, preparados para a instalação desse material com rapidez e qualidade.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="description mt-10">
-		<div class="container">
+		<div class="container-lg">
 			<header class="mb-3">
-				<h2>Descrição</h2>
+				<h1><?php the_title()?></h1>
 			</header>
-			<p class="mb-2" style="max-width:600px;">Nas linhas de Laminados você encontra padrões contemporâneos que ajudam a criar ambientes sofisticados e  acolhedores. Seus padrões madeirados criam uma sensação única de conforto e são ideais  para ambientes residenciais.</p>
+			<p>Trabalhamos com as melhores marcas de Piso Laminado do mercado, com profissionais altamente capacitados e credenciados pelos fabricantes, preparados para a instalação desse material com rapidez e qualidade.</p>
 		</div>
 	</section>
 	<section class="s-product mt-10">
-		<div class="container">
+		<div class="container container-lg">
 			<div class="durafloor">
 				<header class="product-title d-flex ai-center my-5">
 						<h2>Pisos Laminados Durafloor</h2>

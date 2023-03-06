@@ -39,15 +39,15 @@ function appJS() {
 gulp.task('appJS', appJS)
 
 //Compile, Minify External JS
-// function pluginsJS() {
-// 	return gulp
-// 		.src([""])
-// 		.pipe(concat("plugins.min.js"))
-// 		.pipe(uglify())
-// 		.pipe(gulp.dest("js/"))
-// 		.pipe(browserSync.stream());
-// }
-// gulp.task('pluginsJS', pluginsJS)
+function pluginsJS() {
+	return gulp
+		.src(["./js/plugins/lightbox.js"])
+		.pipe(concat("plugins.min.js"))
+		.pipe(uglify())
+		.pipe(gulp.dest("js/"))
+		.pipe(browserSync.stream());
+}
+gulp.task('pluginsJS', pluginsJS)
 
 //Browser Watcher
 gulp.task('browser-sync', function () {
@@ -62,7 +62,7 @@ function watch() {
 	gulp.watch('scss/**/*.scss', sassCompiler)
 	gulp.watch('css/plugins/*.css', pluginsCSS)
 	gulp.watch("js/scripts/*.js", appJS);
-	// gulp.watch('js/plugins/*.js', pluginsJS)
+	gulp.watch('js/plugins/*.js', pluginsJS)
 }
 gulp.task('watch', watch)
-gulp.task("default", gulp.task("default", gulp.parallel("watch", "browser-sync", "sassCompiler", "pluginsCSS", "appJS")));
+gulp.task("default", gulp.task("default", gulp.parallel("watch", "browser-sync", "sassCompiler", "pluginsCSS", "appJS", "pluginsJS")));

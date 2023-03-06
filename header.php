@@ -6,7 +6,6 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/plugins.min.css"/>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/style.min.css"/>
 		<link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri()?>/favicon.svg">
@@ -82,7 +81,7 @@
 					<li class="menu-mobile__item py-1">
 						<a class="menu-mobile__link" href="<?php echo get_permalink(get_page_by_path("pisos vinilicos"))?>">Pisos Vinilicos</a>
 					</li>
-					<li class="menu-mobile__item py-1">
+					<li class="menu-mobile__item py-1 txt-center">
 						<a class="menu-mobile__link" href="<?php echo get_permalink(get_page_by_path("cortinas e persianas"))?>">Cortinas e Persianas</a>
 					</li>
 					<li class="menu-mobile__item py-1">

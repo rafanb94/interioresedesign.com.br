@@ -22,4 +22,3 @@
 		}
 	}
 	document.addEventListener('scroll', fixedMenu);
-

@@ -3,27 +3,23 @@
 <main id="pageSingle">
 	<section class="s-hero" style="background:url(<?php echo get_template_directory_uri()?>/img/bg-hero.jpg); background-repeat: no-repeat; background-size: cover;">
 		<div class="container">
-			<div class="row jc-between">
+			<div class="row jc-center">
 				<div class="row">
-					<img class="bg-image" src="<?php the_field('page_image_background'); ?>" alt="<?php the_field('page_alt_text_background'); ?>">
-				</div>
-				<div class="row flex-col jc-center ai-center">
-					<h1 class="txt-center"><?php the_title()?></h1>
-					<p class="txt-center" style="max-width:520px">Estilo, elegância, conforto e segurança, valorizando cada detalhe da sua residência, com uma grande resistência e durabilidade, o Box e portas de Vidro tem um design moderno e exclusivo, e estão disponíveis em diversas cores, trabalhamos com Box de Vidro e Acrilico.</p>
+					<img class="bg-image" height=525 src="<?php the_field('page_image_background'); ?>" alt="<?php the_field('page_alt_text_background'); ?>">
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="description mt-10">
-		<div class="container">
+		<div class="container-lg">
 			<header class="mb-3">
-				<h2>Descrição</h2>
+				<h1><?php the_title()?></h1>
 			</header>
-			<p class="mb-2" style="max-width:600px;">O box de vidro é a escolha perfeita para quem procura um banheiro elegante e moderno. Além de ser uma opção de revestimento mais sofisticada, o vidro oferece muitas vantagens práticas, como fácil limpeza e maior durabilidade em comparação com outros materiais.</p>
+			<p>Estilo, elegância, conforto e segurança, valorizando cada detalhe da sua residência, com uma grande resistência e durabilidade, o Box e portas de Vidro tem um design moderno e exclusivo, e estão disponíveis em diversas cores, trabalhamos com Box de Vidro.</p>
 		</div>
 	</section>
 	<section class="s-product mt-10">
-		<div class="container">
+		<div class="container-lg">
 			<div class="boxVidro">
 				<header class="product-title my-5">
 					<h2>Box de Vidro</h2>

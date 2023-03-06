@@ -11,13 +11,10 @@ remove_action('admin_print_scripts', 'print_emoji_detection_script');
 remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action('admin_print_styles', 'print_emoji_styles');
 
-add_action('init', 'custom_post_type_pisos_laminados');
-add_action('init', 'custom_post_type_pisos_vinilicos');
-add_action('init','custom_post_type_cortinas');
-add_action('init','custom_post_type_persianas');
-add_action('init','custom_post_type_box_de_vidro');
+add_action('init', 'custom_post_types');
 
-function custom_post_type_pisos_laminados() {
+
+function custom_post_types() {
 	register_post_type('pisos-laminados', array(
 		'label' => 'Pisos Laminados',
 		'description' => 'Pisos Laminados',
@@ -49,8 +46,6 @@ function custom_post_type_pisos_laminados() {
 			'not_found_in_trash' => 'Nenhum Piso Laminado Encontrado no Lixo',
 		)
 	));
-}
-function custom_post_type_pisos_vinilicos() {
 	register_post_type('pisos-vinilicos', array(
 		'label' => 'Pisos Vinilicos',
 		'description' => 'Pisos Vinilicos',
@@ -82,9 +77,6 @@ function custom_post_type_pisos_vinilicos() {
 			'not_found_in_trash' => 'Nenhum Piso Vinilico Encontrado no Lixo',
 		)
 	));
-}
-
-function custom_post_type_cortinas() {
 	register_post_type('cortinas', array(
 		'label' => 'Cortinas',
 		'description' => 'Cortinas',
@@ -115,8 +107,6 @@ function custom_post_type_cortinas() {
 			'not_found_in_trash' => 'Nenhuma Cortina encontrada',
 		)
 	));
-}
-function custom_post_type_persianas() {
 	register_post_type('persianas', array(
 		'label' => 'Persianas',
 		'description' => 'Persianas',
@@ -147,8 +137,6 @@ function custom_post_type_persianas() {
 			'not_found_in_trash' => 'Nenhuma Persiana encontrada',
 		)
 	));
-}
-function custom_post_type_box_de_vidro() {
 	register_post_type('box-de-vidro', array(
 		'label' => 'Box de Vidro',
 		'description' => 'Box de Vidro',

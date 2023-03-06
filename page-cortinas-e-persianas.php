@@ -3,28 +3,23 @@
 <main id="pageSingle">
 	<section class="s-hero" style="background:url(<?php echo get_template_directory_uri()?>/img/bg-hero.jpg); background-repeat: no-repeat; background-size: cover;">
 		<div class="container">
-			<div class="row jc-between">
+			<div class="row jc-center">
 				<div class="row">
 					<img class="bg-image" src="<?php the_field('page_image_background'); ?>" alt="<?php the_field('page_alt_text_background'); ?>">
-				</div>
-				<div class="row flex-col jc-center ai-center">
-					<h1 class="txt-center"><?php the_title()?></h1>
-					<p class="txt-center" style="max-width:520px">Para sua casa , escritório ou fábrica, Persiana vertical, horizontal de tecido, P.V.C ou alumínio.
-						Fabricado com o maior controle de qualidade, reunindo beleza, durabilidade e sofisticação deixando o ambiente leve e agradável.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="description mt-10">
-		<div class="container">
+		<div class="container-lg">
 			<header class="mb-3">
-				<h2>Descrição</h2>
+				<h1><?php the_title()?></h1>
 			</header>
-			<p class="mb-2" style="max-width:600px;">As cortinas e persianas são elementos decorativos e funcionais que proporcionam privacidade, sombreamento e controle da luz natural em ambientes internos. Além disso, também são uma ótima opção para dar um toque de estilo e personalidade aos cômodos da sua casa ou escritório.</p>
+			<p>Para sua casa , escritório ou fábrica, Persiana vertical, horizontal de tecido, P.V.C ou alumínio. Fabricado com o maior controle de qualidade, reunindo beleza, durabilidade e sofisticação deixando o ambiente leve e agradável.</p>
 		</div>
 	</section>
 	<section class="s-product mt-10">
-		<div class="container">
+		<div class="container-lg">
 			<div class="cortinas">
 				<header class="product-title my-5">
 					<h2>Cortinas</h2>

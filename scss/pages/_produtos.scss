@@ -12,12 +12,16 @@
     p {
       color:$primary-99;  
     }
+    .bg-image {
+      position: relative;
+      top: 2rem;
+    }
     @media screen and (max-width: 960px) {
       padding-top: 12rem;
-      padding-bottom: 12rem;
-      .bg-image {
-        display: none;
-      }
+      // padding-bottom: 12rem;
+      // .bg-image {
+      //   display: none;
+      // }
     }
   }
   .s-product {

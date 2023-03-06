@@ -15,7 +15,7 @@
 		</div>
 	</section>
 	<section class="s-product mt-10">
-		<div class="container">
+		<div class="container-lg">
 			<div class="row jc-between">
 				<div class="product-content">
 					<div class="row flex-col">
@@ -51,9 +51,17 @@
 					</div>
 				</div>
 				<div class="product-colors">
-					<div class="container">
-						<img src="<?php the_field('single_types_floor'); ?>" alt="">
-					</div>
+					<header>
+						<h2>Cores Disponíveis</h2>
+					</header>
+						<div class="grid mt-5">
+							<div class="color">	
+								<img src="<?php the_field('single_color_1');?>" alt="">
+								<header>
+									<h3><?php the_field('single_color_name_1'); ?></h3>
+								</header>
+							</div>
+						</div>
 				</div>
 			</div>
 		</div>
