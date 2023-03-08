@@ -128,6 +128,18 @@
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_2');?>" alt="<?php the_field('single_name_color_2'); ?>"/>
 						</swiper-slide>
+						<swiper-slide>
+							<img width="295" height="185" src="<?php the_field('single_image_color_3');?>" alt="<?php the_field('single_name_color_3'); ?>"/>
+						</swiper-slide>
+						<swiper-slide>
+							<img width="295" height="185" src="<?php the_field('single_image_color_4');?>" alt="<?php the_field('single_name_color_4'); ?>"/>
+						</swiper-slide>
+						<swiper-slide>
+							<img width="295" height="185" src="<?php the_field('single_image_color_5');?>" alt="<?php the_field('single_name_color_5'); ?>"/>
+						</swiper-slide>
+						<swiper-slide>
+							<img width="295" height="185" src="<?php the_field('single_image_color_6');?>" alt="<?php the_field('single_name_color_6'); ?>"/>
+						</swiper-slide>
 						<!-- <swiper-slide>
 							<img width="295" height="185" src="https://swiperjs.com/demos/images/nature-2.jpg" />
 						</swiper-slide> -->
