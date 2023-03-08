@@ -112,6 +112,66 @@
 								</div>
 							</div>
 						</swiper-slide>
+						<swiper-slide>
+							<div class="d-flex jc-between ai-center">
+								<img width="590" height="370" src="<?php the_field('single_image_color_7');?>" alt="<?php the_field('single_name_color_7'); ?>"/>
+								<div style="width:36%; text-align:center;">
+									<header>
+										<h3><?php the_field('single_name_color_7'); ?></h3>
+									</header>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="d-flex jc-between ai-center">
+								<img width="590" height="370" src="<?php the_field('single_image_color_8');?>" alt="<?php the_field('single_name_color_8'); ?>"/>
+								<div style="width:36%; text-align:center;">
+									<header>
+										<h3><?php the_field('single_name_color_8'); ?></h3>
+									</header>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="d-flex jc-between ai-center">
+								<img width="590" height="370" src="<?php the_field('single_image_color_9');?>" alt="<?php the_field('single_name_color_9'); ?>"/>
+								<div style="width:36%; text-align:center;">
+									<header>
+										<h3><?php the_field('single_name_color_9'); ?></h3>
+									</header>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="d-flex jc-between ai-center">
+								<img width="590" height="370" src="<?php the_field('single_image_color_10');?>" alt="<?php the_field('single_name_color_10'); ?>"/>
+								<div style="width:36%; text-align:center;">
+									<header>
+										<h3><?php the_field('single_name_color_10'); ?></h3>
+									</header>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="d-flex jc-between ai-center">
+								<img width="590" height="370" src="<?php the_field('single_image_color_11');?>" alt="<?php the_field('single_name_color_11'); ?>"/>
+								<div style="width:36%; text-align:center;">
+									<header>
+										<h3><?php the_field('single_name_color_11'); ?></h3>
+									</header>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="d-flex jc-between ai-center">
+								<img width="590" height="370" src="<?php the_field('single_image_color_12');?>" alt="<?php the_field('single_name_color_12'); ?>"/>
+								<div style="width:36%; text-align:center;">
+									<header>
+										<h3><?php the_field('single_name_color_12'); ?></h3>
+									</header>
+								</div>
+							</div>
+						</swiper-slide>
 						<!-- <swiper-slide>
 							<div class="d-flex jc-between ai-center">
 								<img width="590" height="370" src="https://swiperjs.com/demos/images/nature-2.jpg" />
@@ -139,6 +199,24 @@
 						</swiper-slide>
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_6');?>" alt="<?php the_field('single_name_color_6'); ?>"/>
+						</swiper-slide>
+						<swiper-slide>
+							<img width="295" height="185" src="<?php the_field('single_image_color_7');?>" alt="<?php the_field('single_name_color_7'); ?>"/>
+						</swiper-slide>
+						<swiper-slide>
+							<img width="295" height="185" src="<?php the_field('single_image_color_8');?>" alt="<?php the_field('single_name_color_8'); ?>"/>
+						</swiper-slide>
+						<swiper-slide>
+							<img width="295" height="185" src="<?php the_field('single_image_color_9');?>" alt="<?php the_field('single_name_color_9'); ?>"/>
+						</swiper-slide>
+						<swiper-slide>
+							<img width="295" height="185" src="<?php the_field('single_image_color_10');?>" alt="<?php the_field('single_name_color_10'); ?>"/>
+						</swiper-slide>
+						<swiper-slide>
+							<img width="295" height="185" src="<?php the_field('single_image_color_11');?>" alt="<?php the_field('single_name_color_11'); ?>"/>
+						</swiper-slide>
+						<swiper-slide>
+							<img width="295" height="185" src="<?php the_field('single_image_color_12');?>" alt="<?php the_field('single_name_color_12'); ?>"/>
 						</swiper-slide>
 						<!-- <swiper-slide>
 							<img width="295" height="185" src="https://swiperjs.com/demos/images/nature-2.jpg" />
