@@ -50,80 +50,48 @@
 					<header>
 						<h2>Cores Disponíveis</h2>
 					</header>
-						<div class="grid-colors mt-3">
-							<div class="color">	
-								<img src="<?php the_field('single_image_color_1');?>" alt="">
-								<header>
-									<h3><?php the_field('single_name_color_1'); ?></h3>
-								</header>
+					<swiper-container style="--swiper-navigation-color: #D1FFA2; --swiper-pagination-color: #D1FFA2" class="mySwiper mt-3"
+						thumbs-swiper=".mySwiper2" space-between="4" navigation="true" slides-per-view="1">
+						<swiper-slide>
+							<div class="d-flex jc-between ai-center">
+								<img width="590" height="370" src="<?php the_field('single_image_color_1');?>" alt="<?php the_field('single_name_color_1'); ?>"/>
+								<div style="width:36%; text-align:center;">
+									<header>
+										<h3><?php the_field('single_name_color_1'); ?></h3>
+									</header>
+								</div>
 							</div>
-							<div class="color">	
-								<img src="<?php the_field('single_image_color_2');?>" alt="">
-								<header>
-									<h3><?php the_field('single_name_color_2'); ?></h3>
-								</header>
+						</swiper-slide>
+						<swiper-slide>
+						<div class="d-flex jc-between ai-center">
+								<img width="590" height="370" src="<?php the_field('single_image_color_2');?>" alt="<?php the_field('single_name_color_2'); ?>"/>
+								<div style="width:36%; text-align:center;">
+									<header>
+										<h3><?php the_field('single_name_color_2'); ?></h3>
+									</header>
+								</div>
 							</div>
-							<div class="color">	
-								<img src="<?php the_field('single_image_color_3');?>" alt="">
-								<header>
-									<h3><?php the_field('single_name_color_3'); ?></h3>
-								</header>
+						</swiper-slide>
+						<!-- <swiper-slide>
+							<div class="d-flex jc-between ai-center">
+								<img width="590" height="370" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+								<div style="width:36%; text-align:center;"><p>Nome da Cor</p></div>
 							</div>
-							<div class="color">	
-								<img src="<?php the_field('single_image_color_4');?>" alt="">
-								<header>
-									<h3><?php the_field('single_name_color_4'); ?></h3>
-								</header>
-							</div>
-							<div class="color">	
-								<img src="<?php the_field('single_image_color_5');?>" alt="">
-								<header>
-									<h3><?php the_field('single_name_color_5'); ?></h3>
-								</header>
-							</div>
-							<div class="color">	
-								<img src="<?php the_field('single_image_color_6');?>" alt="">
-								<header>
-									<h3><?php the_field('single_name_color_6'); ?></h3>
-								</header>
-							</div>
-							<div class="color">	
-								<img src="<?php the_field('single_image_color_7');?>" alt="">
-								<header>
-									<h3><?php the_field('single_name_color_7'); ?></h3>
-								</header>
-							</div>
-							<div class="color">	
-								<img src="<?php the_field('single_image_color_8');?>" alt="">
-								<header>
-									<h3><?php the_field('single_name_color_8'); ?></h3>
-								</header>
-							</div>
-							<div class="color">	
-								<img src="<?php the_field('single_image_color_9');?>" alt="">
-								<header>
-									<h3><?php the_field('single_name_color_9'); ?></h3>
-								</header>
-							</div>
-							<div class="color">	
-								<img src="<?php the_field('single_image_color_10');?>" alt="">
-								<header>
-									<h3><?php the_field('single_name_color_10'); ?></h3>
-								</header>
-							</div>
-							<div class="color">	
-								<img src="<?php the_field('single_image_color_11');?>" alt="">
-								<header>
-									<h3><?php the_field('single_name_color_11'); ?></h3>
-								</header>
-							</div>
-							<div class="color">	
-								<img src="<?php the_field('single_image_color_12');?>" alt="">
-								<header>
-									<h3><?php the_field('single_name_color_12'); ?></h3>
-								</header>
-							</div>
-						</div>
+						</swiper-slide> -->
+  				</swiper-container>
+
+					<swiper-container class="mySwiper2" space-between="8" slides-per-view="3" free-mode="true"
+						watch-slides-progress="true">
+						<swiper-slide>
+							<img width="295" height="185" src="<?php the_field('single_image_color_1');?>" alt="<?php the_field('single_name_color_1'); ?>"/>
+						</swiper-slide>
+						<swiper-slide>
+							<img width="295" height="185" src="<?php the_field('single_image_color_2');?>" alt="<?php the_field('single_name_color_2'); ?>"/>
+						</swiper-slide>
+						<!-- <swiper-slide>
+							<img width="295" height="185" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+						</swiper-slide> -->
+					</swiper-container>
 				</div>
 			</div>
 		</div>

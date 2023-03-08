@@ -86,20 +86,31 @@
 		</div>
 		</div>
 	</footer>
-	<script type="module">
-		import PhotoSwipeLightbox from 'photoswipe/lightbox';
-		import 'photoswipe/style.css';
+	<style>
 
-		const lightbox = new PhotoSwipeLightbox({
-			gallery: '#my-gallery',	
-			children: 'a',
-			pswpModule: () => import('photoswipe'),
-		});
+    .mySwiper2 {
+      padding-top:.8rem;
+    }
 
-		lightbox.init();
+    .mySwiper2 swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
 
-	</script>
-	
+    .mySwiper2 .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+   .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+	</style>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 		<script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
 		<script src="<?php echo get_template_directory_uri()?>/js/app.min.js"></script>
 		<script src="<?php echo get_template_directory_uri()?>/js/plugins.min.js"></script>
