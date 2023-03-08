@@ -87,7 +87,11 @@
 		</div>
 	</footer>
 	<style>
-
+		.mySwiper {
+			h3 {
+				display: none;
+			}
+		}
     .mySwiper2 {
       padding-top:.8rem;
     }
