@@ -63,11 +63,51 @@
 							</div>
 						</swiper-slide>
 						<swiper-slide>
-						<div class="d-flex jc-between ai-center">
+							<div class="d-flex jc-between ai-center">
 								<img width="590" height="370" src="<?php the_field('single_image_color_2');?>" alt="<?php the_field('single_name_color_2'); ?>"/>
 								<div style="width:36%; text-align:center;">
 									<header>
 										<h3><?php the_field('single_name_color_2'); ?></h3>
+									</header>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="d-flex jc-between ai-center">
+								<img width="590" height="370" src="<?php the_field('single_image_color_3');?>" alt="<?php the_field('single_name_color_3'); ?>"/>
+								<div style="width:36%; text-align:center;">
+									<header>
+										<h3><?php the_field('single_name_color_3'); ?></h3>
+									</header>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="d-flex jc-between ai-center">
+								<img width="590" height="370" src="<?php the_field('single_image_color_4');?>" alt="<?php the_field('single_name_color_4'); ?>"/>
+								<div style="width:36%; text-align:center;">
+									<header>
+										<h3><?php the_field('single_name_color_2'); ?></h3>
+									</header>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="d-flex jc-between ai-center">
+								<img width="590" height="370" src="<?php the_field('single_image_color_5');?>" alt="<?php the_field('single_name_color_5'); ?>"/>
+								<div style="width:36%; text-align:center;">
+									<header>
+										<h3><?php the_field('single_name_color_5'); ?></h3>
+									</header>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="d-flex jc-between ai-center">
+								<img width="590" height="370" src="<?php the_field('single_image_color_6');?>" alt="<?php the_field('single_name_color_6'); ?>"/>
+								<div style="width:36%; text-align:center;">
+									<header>
+										<h3><?php the_field('single_name_color_6'); ?></h3>
 									</header>
 								</div>
 							</div>
