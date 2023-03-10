@@ -18,25 +18,8 @@
 						<h1><?php the_title()?></h1>
 					</header>
 				</div>
-				<div class="row flex-col mt-5">
+				<div class="row flex-col">
 					<?php the_content()?>
-					<!-- <header class="mb-3">
-						<h2>Benefícios</h2>
-					</header>
-					<ul>
-						<li>Feito com madeira reflorestada</li>
-						<li>Conforto acústico</li>
-						<li>Conforto térmico</li>
-						<li>Limpeza ainda mais fácil</li>
-						<li>Rápida instalação</li>
-						<li>Qualidade garantida Duratex</li>
-						<li>Proteção antibacteriana (Protekto)</li>
-						<li>Resistente a cupins</li>
-					</ul>
-					<header class="my-3">
-						<h2>Indicações</h2>
-					</header>
-					<p class="mb-2">Áreas residenciais de grande circulação como quartos, salas, corredores e halls.</p>	 -->
 				</div>
 				<div class="row flex-col mt-5">
 						<header class="mb-3">

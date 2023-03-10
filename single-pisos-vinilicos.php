@@ -18,23 +18,8 @@
 						<h1><?php the_title()?></h1>
 					</header>
 				</div>
-				<div class="row flex-col mt-5">
+				<div class="row flex-col">
 					<?php the_content()?>
-					<!-- <header class="mb-3">
-						<h2>Benefícios</h2>
-					</header>
-					<ul>
-						<li>Fácil de limpar</li>
-						<li>Não provoca alergias</li>
-						<li>Variedade de Texturas e padrões</li>
-						<li>Conforto acústico</li>
-						<li>Confortável em qualquer temperatura</li>
-					</ul>
-					<header class="my-3">
-						<h2>Indicações</h2>
-					</header>
-					<p class="mb-2">Áreas residenciais de grande circulação como quartos, salas, corredores e halls.</p>
-					<p>Áreas comerciais com grande circulação de pessoas como teatros, cinemas, casas de espetáculos, escolas, hotéis, shoppings</p>	 -->
 				</div>
 				<div class="row flex-col mt-5">
 					<header>
