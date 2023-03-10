@@ -21,7 +21,7 @@
 				<div class="row flex-col">
 					<?php the_content()?>
 				</div>
-				<div class="row flex-col mt-5">
+				<div class="row flex-col">
 						<header class="mb-3">
 							<h2>Fornecedor</h2>
 						</header>
