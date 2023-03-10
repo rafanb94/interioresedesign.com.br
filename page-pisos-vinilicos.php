@@ -23,7 +23,7 @@
 			<div class="durafloor">
 				<header class="product-title d-flex ai-center my-5">
 						<h2>Pisos Vinilicos Durafloor</h2>
-						<img class="ml-2" width=80 height=80 src="<?php the_field('page_provider_durafloor'); ?>" alt="">
+						<img class="ml-2 icon-provider" width=80 height=80 src="<?php the_field('page_provider_durafloor'); ?>" alt="">
 				</header>
 					<?php 
 						$config = array ('posts_per_page' => '6', 'post_type' => 'pisos-vinilicos', 'category_name' => 'durafloor', 'order'=> 'DESC');
@@ -49,7 +49,7 @@
 			<div class="ospefloor mt-5">
 				<header class="product-title d-flex ai-center my-5">
 						<h2>Pisos Vinilicos Ospefloor</h2>
-						<img class="ml-2" width=80 height=80 src="<?php the_field('page_provider_ospefloor'); ?>" alt="">
+						<img class="ml-2 icon-provider" width=80 height=80 src="<?php the_field('page_provider_ospefloor'); ?>" alt="">
 				</header>
 					<?php 
 						$config = array ('posts_per_page' => '6', 'post_type' => 'pisos-vinilicos', 'category_name' => 'ospefloor', 'order'=> 'DESC');
