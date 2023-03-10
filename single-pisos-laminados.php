@@ -13,7 +13,8 @@
 	<section class="s-product mt-10">
 		<div class="container-lg">
 			<div class="product-content">
-				<div class="row flex-col">
+				<?php the_content()?>
+				<!-- <div class="row flex-col">
 					<header class="mb-3">
 						<h1><?php the_title()?></h1>
 					</header>
@@ -45,7 +46,7 @@
 							<h2>Fornecedor</h2>
 						</header>
 						<img width=180 height=180 src="<?php the_field('single_provider'); ?>" alt="">
-				</div>
+				</div> -->
 				<div class="product-colors mt-5">
 					<header>
 						<h2>Cores Disponíveis</h2>
@@ -242,7 +243,7 @@
 
 					<swiper-container class="mySwiper2" space-between="8" slides-per-view="3" free-mode="true"
 						watch-slides-progress="true">
-						
+
 						<?php if( get_field('single_image_color_1') ): ?>
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_1');?>" alt="<?php the_field('single_name_color_1'); ?>"/>
