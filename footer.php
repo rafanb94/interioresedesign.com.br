@@ -70,11 +70,6 @@
 					<li><a href="<?php echo get_permalink(get_page_by_path("sobre"))?>">Sobre</a></li>
 				</ul>
 			</div>
-			<!-- <div class="categorias">
-				<ul>
-					<li><b>CATEGORIAS</b></li>
-				</ul>
-			</div> -->
 			<div class="footer-contato">
 				<ul>
 					<li><b>CONTATO</b></li>
@@ -87,9 +82,11 @@
 		</div>
 	</footer>
 	<style>
-		.mySwiper h3 {
+		@media screen and (max-width: 960px) {
+			.mySwiper h3 {
 			display:none;
 		}
+     }
     .mySwiper2 {
       padding-top:.8rem;
     }

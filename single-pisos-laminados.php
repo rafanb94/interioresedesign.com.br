@@ -54,10 +54,14 @@
 						thumbs-swiper=".mySwiper2" space-between="4" navigation="true" slides-per-view="1">
 						<swiper-slide>
 							<div class="d-flex jc-between ai-center">
+							<?php if( get_field('single_image_color_1') ): ?>
 								<img width="590" height="370" src="<?php the_field('single_image_color_1');?>" alt="<?php the_field('single_name_color_1'); ?>"/>
+							<?php endif; ?>
 								<div style="width:36%; text-align:center;">
 									<header>
+									<?php if( get_field('single_name_color_1') ): ?>
 										<h3><?php the_field('single_name_color_1'); ?></h3>
+									<?php endif; ?>
 									</header>
 								</div>
 							</div>
@@ -104,10 +108,14 @@
 						</swiper-slide>
 						<swiper-slide>
 							<div class="d-flex jc-between ai-center">
+							<?php if( get_field('single_image_color_6') ): ?>
 								<img width="590" height="370" src="<?php the_field('single_image_color_6');?>" alt="<?php the_field('single_name_color_6'); ?>"/>
+							<?php endif; ?>
 								<div style="width:36%; text-align:center;">
 									<header>
+									<?php if( get_field('single_name_color_6') ): ?>
 										<h3><?php the_field('single_name_color_6'); ?></h3>
+									<?php endif; ?>
 									</header>
 								</div>
 							</div>
