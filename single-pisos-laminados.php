@@ -52,174 +52,186 @@
 					</header>
 					<swiper-container style="--swiper-navigation-color: #D1FFA2; --swiper-pagination-color: #D1FFA2" class="mySwiper mt-3"
 						thumbs-swiper=".mySwiper2" space-between="4" navigation="true" slides-per-view="1">
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-							<?php if( get_field('single_image_color_1') ): ?>
-								<img width="590" height="370" src="<?php the_field('single_image_color_1');?>" alt="<?php the_field('single_name_color_1'); ?>"/>
-							<?php endif; ?>
-								<div style="width:36%; text-align:center;">
-									<header>
-									<?php if( get_field('single_name_color_1') ): ?>
-										<h3><?php the_field('single_name_color_1'); ?></h3>
-									<?php endif; ?>
-									</header>
+
+						<?php if( get_field('single_image_color_1') ): ?>
+							<swiper-slide>
+								<div class="d-flex jc-between ai-center">
+									<img width="590" height="370" src="<?php the_field('single_image_color_1');?>" alt="<?php the_field('single_name_color_1'); ?>"/>
+									<div style="width:36%; text-align:center;">
+										<header>
+											<?php if( get_field('single_name_color_1') ): ?>
+												<h3><?php the_field('single_name_color_1'); ?></h3>
+											<?php endif; ?>
+										</header>
+									</div>
 								</div>
-							</div>
-						</swiper-slide>
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-							<?php if( get_field('single_image_color_2') ): ?>
-								<img width="590" height="370" src="<?php the_field('single_image_color_2');?>" alt="<?php the_field('single_name_color_2'); ?>"/>
-							<?php endif; ?>
-								<div style="width:36%; text-align:center;">
-									<header>
-									<?php if( get_field('single_name_color_2') ): ?>
-										<h3><?php the_field('single_name_color_2'); ?></h3>
-									<?php endif; ?>
-									</header>
+							</swiper-slide>
+						<?php endif; ?>
+
+						<?php if( get_field('single_image_color_2') ): ?>
+							<swiper-slide>
+								<div class="d-flex jc-between ai-center">
+									<img width="590" height="370" src="<?php the_field('single_image_color_2');?>" alt="<?php the_field('single_name_color_2'); ?>"/>
+									<div style="width:36%; text-align:center;">
+										<header>
+											<?php if( get_field('single_name_color_2') ): ?>
+												<h3><?php the_field('single_name_color_2'); ?></h3>
+											<?php endif; ?>
+										</header>
+									</div>
 								</div>
-							</div>
-						</swiper-slide>
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-							<?php if( get_field('single_image_color_3') ): ?>
-								<img width="590" height="370" src="<?php the_field('single_image_color_3');?>" alt="<?php the_field('single_name_color_3'); ?>"/>
-							<?php endif; ?>
-								<div style="width:36%; text-align:center;">
-									<header>
-									<?php if( get_field('single_name_color_3') ): ?>
-										<h3><?php the_field('single_name_color_3'); ?></h3>
+							</swiper-slide>
+						<?php endif; ?>
+
+						<?php if( get_field('single_image_color_3') ): ?>
+							<swiper-slide>
+								<div class="d-flex jc-between ai-center">
+									<img width="590" height="370" src="<?php the_field('single_image_color_3');?>" alt="<?php the_field('single_name_color_3'); ?>"/>
+									<div style="width:36%; text-align:center;">
+										<header>
+											<?php if( get_field('single_name_color_3') ): ?>
+												<h3><?php the_field('single_name_color_3'); ?></h3>
+											<?php endif; ?>
+										</header>
+									</div>
+								</div>
+							</swiper-slide>
+						<?php endif; ?>
+
+						<?php if( get_field('single_image_color_4') ): ?>
+							<swiper-slide>
+								<div class="d-flex jc-between ai-center">
+									<img width="590" height="370" src="<?php the_field('single_image_color_4');?>" alt="<?php the_field('single_name_color_4'); ?>"/>
+									<div style="width:36%; text-align:center;">
+										<header>
+										<?php if( get_field('single_name_color_4') ): ?>
+											<h3><?php the_field('single_name_color_4'); ?></h3>
 										<?php endif; ?>
-									</header>
+										</header>
+									</div>
 								</div>
-							</div>
-						</swiper-slide>
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-							<?php if( get_field('single_image_color_4') ): ?>
-								<img width="590" height="370" src="<?php the_field('single_image_color_4');?>" alt="<?php the_field('single_name_color_4'); ?>"/>
-							<?php endif; ?>
-								<div style="width:36%; text-align:center;">
-									<header>
-									<?php if( get_field('single_name_color_4') ): ?>
-										<h3><?php the_field('single_name_color_4'); ?></h3>
-									<?php endif; ?>
-									</header>
+							</swiper-slide>
+						<?php endif; ?>
+
+						<?php if( get_field('single_image_color_5') ): ?>
+							<swiper-slide>
+								<div class="d-flex jc-between ai-center">
+									<img width="590" height="370" src="<?php the_field('single_image_color_5');?>" alt="<?php the_field('single_name_color_5'); ?>"/>
+									<div style="width:36%; text-align:center;">
+										<header>
+										<?php if( get_field('single_name_color_5') ): ?>
+											<h3><?php the_field('single_name_color_5'); ?></h3>
+										<?php endif; ?>
+										</header>
+									</div>
 								</div>
-							</div>
-						</swiper-slide>
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-							<?php if( get_field('single_image_color_5') ): ?>
-								<img width="590" height="370" src="<?php the_field('single_image_color_5');?>" alt="<?php the_field('single_name_color_5'); ?>"/>
-							<?php endif; ?>
-								<div style="width:36%; text-align:center;">
-									<header>
-									<?php if( get_field('single_name_color_5') ): ?>
-										<h3><?php the_field('single_name_color_5'); ?></h3>
-									<?php endif; ?>
-									</header>
+							</swiper-slide>
+						<?php endif; ?>
+
+						<?php if( get_field('single_image_color_6') ): ?>
+							<swiper-slide>
+								<div class="d-flex jc-between ai-center">
+									<img width="590" height="370" src="<?php the_field('single_image_color_6');?>" alt="<?php the_field('single_name_color_6'); ?>"/>
+									<div style="width:36%; text-align:center;">
+										<header>
+										<?php if( get_field('single_name_color_6') ): ?>
+											<h3><?php the_field('single_name_color_6'); ?></h3>
+										<?php endif; ?>
+										</header>
+									</div>
 								</div>
-							</div>
-						</swiper-slide>
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-							<?php if( get_field('single_image_color_6') ): ?>
-								<img width="590" height="370" src="<?php the_field('single_image_color_6');?>" alt="<?php the_field('single_name_color_6'); ?>"/>
-							<?php endif; ?>
-								<div style="width:36%; text-align:center;">
-									<header>
-									<?php if( get_field('single_name_color_6') ): ?>
-										<h3><?php the_field('single_name_color_6'); ?></h3>
-									<?php endif; ?>
-									</header>
+							</swiper-slide>
+						<?php endif; ?>
+
+						<?php if( get_field('single_image_color_7') ): ?>
+							<swiper-slide>
+								<div class="d-flex jc-between ai-center">
+									<img width="590" height="370" src="<?php the_field('single_image_color_7');?>" alt="<?php the_field('single_name_color_7'); ?>"/>
+									<div style="width:36%; text-align:center;">
+										<header>
+										<?php if( get_field('single_name_color_7') ): ?>
+											<h3><?php the_field('single_name_color_7'); ?></h3>
+										<?php endif; ?>
+										</header>
+									</div>
 								</div>
-							</div>
-						</swiper-slide>
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-							<?php if( get_field('single_image_color_7') ): ?>
-								<img width="590" height="370" src="<?php the_field('single_image_color_7');?>" alt="<?php the_field('single_name_color_7'); ?>"/>
-							<?php endif; ?>
-								<div style="width:36%; text-align:center;">
-									<header>
-									<?php if( get_field('single_name_color_7') ): ?>
-										<h3><?php the_field('single_name_color_7'); ?></h3>
-									<?php endif; ?>
-									</header>
+							</swiper-slide>
+						<?php endif; ?>
+
+						<?php if( get_field('single_image_color_8') ): ?>
+							<swiper-slide>
+								<div class="d-flex jc-between ai-center">
+									<img width="590" height="370" src="<?php the_field('single_image_color_8');?>" alt="<?php the_field('single_name_color_8'); ?>"/>
+									<div style="width:36%; text-align:center;">
+										<header>
+										<?php if( get_field('single_name_color_8') ): ?>
+											<h3><?php the_field('single_name_color_8'); ?></h3>
+										<?php endif; ?>
+										</header>
+									</div>
 								</div>
-							</div>
-						</swiper-slide>
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-							<?php if( get_field('single_image_color_8') ): ?>
-								<img width="590" height="370" src="<?php the_field('single_image_color_8');?>" alt="<?php the_field('single_name_color_8'); ?>"/>
-							<?php endif; ?>
-								<div style="width:36%; text-align:center;">
-									<header>
-									<?php if( get_field('single_name_color_8') ): ?>
-										<h3><?php the_field('single_name_color_8'); ?></h3>
-									</header>
-								<?php endif; ?>
+							</swiper-slide>
+						<?php endif; ?>
+
+						<?php if( get_field('single_image_color_9') ): ?>
+							<swiper-slide>
+								<div class="d-flex jc-between ai-center">
+									<img width="590" height="370" src="<?php the_field('single_image_color_9');?>" alt="<?php the_field('single_name_color_9'); ?>"/>
+									<div style="width:36%; text-align:center;">
+										<header>
+										<?php if( get_field('single_name_color_9') ): ?>
+											<h3><?php the_field('single_name_color_9'); ?></h3>
+										<?php endif; ?>
+										</header>
+									</div>
 								</div>
-							</div>
-						</swiper-slide>
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-							<?php if( get_field('single_image_color_9') ): ?>
-								<img width="590" height="370" src="<?php the_field('single_image_color_9');?>" alt="<?php the_field('single_name_color_9'); ?>"/>
-							<?php endif; ?>
-								<div style="width:36%; text-align:center;">
-									<header>
-									<?php if( get_field('single_name_color_9') ): ?>
-										<h3><?php the_field('single_name_color_9'); ?></h3>
-									<?php endif; ?>
-									</header>
+							</swiper-slide>
+						<?php endif; ?>
+						
+						<?php if( get_field('single_name_color_10') ): ?>
+							<swiper-slide>
+								<div class="d-flex jc-between ai-center">
+									<img width="590" height="370" src="<?php the_field('single_image_color_10');?>" alt="<?php the_field('single_name_color_10'); ?>"/>
+									<div style="width:36%; text-align:center;">
+										<header>
+										<?php if( get_field('single_name_color_10') ): ?>
+											<h3><?php the_field('single_name_color_10'); ?></h3>
+										<?php endif; ?>
+										</header>
+									</div>
 								</div>
-							</div>
-						</swiper-slide>
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-							<?php if( get_field('single_name_color_10') ): ?>
-								<img width="590" height="370" src="<?php the_field('single_image_color_10');?>" alt="<?php the_field('single_name_color_10'); ?>"/>
-							<?php endif; ?>
-								<div style="width:36%; text-align:center;">
-									<header>
-									<?php if( get_field('single_name_color_10') ): ?>
-										<h3><?php the_field('single_name_color_10'); ?></h3>
-									<?php endif; ?>
-									</header>
+							</swiper-slide>
+						<?php endif; ?>
+
+						<?php if( get_field('single_image_color_11') ): ?>
+							<swiper-slide>
+								<div class="d-flex jc-between ai-center">
+									<img width="590" height="370" src="<?php the_field('single_image_color_11');?>" alt="<?php the_field('single_name_color_11'); ?>"/>
+									<div style="width:36%; text-align:center;">
+										<header>
+										<?php if( get_field('single_name_color_11') ): ?>
+											<h3><?php the_field('single_name_color_11'); ?></h3>
+										<?php endif; ?>
+										</header>
+									</div>
 								</div>
-							</div>
-						</swiper-slide>
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-							<?php if( get_field('single_image_color_11') ): ?>
-								<img width="590" height="370" src="<?php the_field('single_image_color_11');?>" alt="<?php the_field('single_name_color_11'); ?>"/>
-							<?php endif; ?>
-								<div style="width:36%; text-align:center;">
-									<header>
-									<?php if( get_field('single_name_color_11') ): ?>
-										<h3><?php the_field('single_name_color_11'); ?></h3>
-									<?php endif; ?>
-									</header>
+							</swiper-slide>
+						<?php endif; ?>
+
+						<?php if( get_field('single_image_color_12') ): ?>
+							<swiper-slide>
+								<div class="d-flex jc-between ai-center">
+									<img width="590" height="370" src="<?php the_field('single_image_color_12');?>" alt="<?php the_field('single_name_color_12'); ?>"/>
+									<div style="width:36%; text-align:center;">
+										<header>
+										<?php if( get_field('single_name_color_12') ): ?>
+											<h3><?php the_field('single_name_color_12'); ?></h3>
+										<?php endif; ?>
+										</header>
+									</div>
 								</div>
-							</div>
-						</swiper-slide>
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-							<?php if( get_field('single_image_color_12') ): ?>
-								<img width="590" height="370" src="<?php the_field('single_image_color_12');?>" alt="<?php the_field('single_name_color_12'); ?>"/>
-							<?php endif; ?>
-								<div style="width:36%; text-align:center;">
-									<header>
-									<?php if( get_field('single_name_color_12') ): ?>
-										<h3><?php the_field('single_name_color_12'); ?></h3>
-									<?php endif; ?>
-									</header>
-								</div>
-							</div>
-						</swiper-slide>
+							</swiper-slide>
+						<?php endif; ?>
 						<!-- <swiper-slide>
 							<div class="d-flex jc-between ai-center">
 								<img width="590" height="370" src="https://swiperjs.com/demos/images/nature-2.jpg" />
@@ -230,6 +242,7 @@
 
 					<swiper-container class="mySwiper2" space-between="8" slides-per-view="3" free-mode="true"
 						watch-slides-progress="true">
+						
 						<?php if( get_field('single_image_color_1') ): ?>
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_1');?>" alt="<?php the_field('single_name_color_1'); ?>"/>
