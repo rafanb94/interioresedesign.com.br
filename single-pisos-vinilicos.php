@@ -65,6 +65,7 @@
 								</div>
 							</swiper-slide>
 						<?php endif; ?>
+
 						<?php if( get_field('single_image_color_2') ): ?>
 							<swiper-slide>
 								<div class="d-flex jc-between ai-center">
@@ -200,20 +201,20 @@
 							</swiper-slide>
 						<?php endif; ?>
 
-						?php if( get_field('single_image_color_11') ): ?>
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-								<img width="590" height="370" src="<?php the_field('single_image_color_11');?>" alt="<?php the_field('single_name_color_11'); ?>"/>
-								<div style="width:36%; text-align:center;">
-									<header>
-									<?php if( get_field('single_name_color_11') ): ?>
-										<h3><?php the_field('single_name_color_11'); ?></h3>
-									<?php endif; ?>
-									</header>
+						<?php if( get_field('single_image_color_11') ): ?>
+							<swiper-slide>
+								<div class="d-flex jc-between ai-center">
+									<img width="590" height="370" src="<?php the_field('single_image_color_11');?>" alt="<?php the_field('single_name_color_11'); ?>"/>
+									<div style="width:36%; text-align:center;">
+										<header>
+										<?php if( get_field('single_name_color_11') ): ?>
+											<h3><?php the_field('single_name_color_11'); ?></h3>
+										<?php endif; ?>
+										</header>
+									</div>
 								</div>
-							</div>
-						</swiper-slide>
-						?php endif; ?>
+							</swiper-slide>
+						<?php endif; ?>
 
 						<?php if( get_field('single_image_color_12') ): ?>
 							<swiper-slide>
