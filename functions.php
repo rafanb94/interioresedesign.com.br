@@ -27,7 +27,7 @@ function custom_post_types() {
 		'taxonomies' => array( 'category' ),
 		'rewrite' => array('slug' => 'pisos-laminados', 'with_front' => true),
 		'query_var' => true,
-		'supports' => array('title', 'editor', 'page-attributes','post-formats'),
+		'supports' => array('title', 'page-attributes','post-formats'),
 		'menu_icon' => 'dashicons-category',
 
 		'labels' => array (
@@ -58,7 +58,7 @@ function custom_post_types() {
 		'taxonomies' => array( 'category' ),
 		'rewrite' => array('slug' => 'pisos-vinilicos', 'with_front' => true),
 		'query_var' => true,
-		'supports' => array('title', 'editor', 'page-attributes','post-formats'),
+		'supports' => array('title', 'page-attributes','post-formats'),
 		'menu_icon' => 'dashicons-category',
 
 		'labels' => array (
