@@ -13,15 +13,14 @@
 	<section class="s-product mt-10">
 		<div class="container-lg">
 			<div class="product-content">
-				<?php the_content()?>
 				<div class="row flex-col">
 					<header class="mb-3">
 						<h1><?php the_title()?></h1>
 					</header>
-					<p>Trabalhamos com as melhores marcas de Piso Laminado do mercado, com profissionais altamente capacitados e credenciados pelos fabricantes, preparados para a instalação desse material com rapidez e qualidade.</p>
 				</div>
 				<div class="row flex-col mt-5">
-					<header class="mb-3">
+					<?php the_content()?>
+					<!-- <header class="mb-3">
 						<h2>Benefícios</h2>
 					</header>
 					<ul>
@@ -34,12 +33,10 @@
 						<li>Proteção antibacteriana (Protekto)</li>
 						<li>Resistente a cupins</li>
 					</ul>
-				</div>
-				<div class="row flex-col mt-5">
-						<header class="mb-3">
-							<h2>Indicações</h2>
-						</header>
-						<p class="mb-2">Áreas residenciais de grande circulação como quartos, salas, corredores e halls.</p>	
+					<header class="my-3">
+						<h2>Indicações</h2>
+					</header>
+					<p class="mb-2">Áreas residenciais de grande circulação como quartos, salas, corredores e halls.</p>	 -->
 				</div>
 				<div class="row flex-col mt-5">
 						<header class="mb-3">

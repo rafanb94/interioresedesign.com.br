@@ -90,6 +90,7 @@ function custom_post_types() {
 		'hierarchical' => false,
 		'rewrite' => array('slug' => 'cortinas', 'with_front' => true),
 		'query_var' => true,
+		'show_in_rest' => true,
 		'supports' => array('title', 'editor', 'page-attributes','post-formats'),
     'menu_icon' => 'dashicons-category',
 
@@ -120,6 +121,7 @@ function custom_post_types() {
 		'hierarchical' => false,
 		'rewrite' => array('slug' => 'persianas', 'with_front' => true),
 		'query_var' => true,
+		'show_in_rest' => true,
 		'supports' => array('title', 'editor', 'page-attributes','post-formats'),
     'menu_icon' => 'dashicons-category',
 
@@ -150,6 +152,7 @@ function custom_post_types() {
 		'hierarchical' => false,
 		'rewrite' => array('slug' => 'box-de-vidro', 'with_front' => true),
 		'query_var' => true,
+		'show_in_rest' => true,
 		'supports' => array('title', 'editor', 'page-attributes','post-formats'),
     'menu_icon' => 'dashicons-category',
 
