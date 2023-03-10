@@ -14,11 +14,11 @@
 		<div class="container-lg">
 			<div class="product-content">
 				<?php the_content()?>
-				<!-- <div class="row flex-col">
+				<div class="row flex-col">
 					<header class="mb-3">
-						<h2>Descrição</h2>
+						<h1><?php the_title()?></h1>
 					</header>
-					<p class="mb-2">Se você está procurando por um piso durável, fácil de limpar e que oferece uma ampla gama de estilos e opções de cor, então os pisos vinílicos são a escolha perfeita para você. Aqui na interiores e design, oferecemos uma ampla seleção de pisos vinílicos de alta qualidade, com preços acessíveis e instalação fácil.</p>
+					<p>O piso vinílico é um dos revestimentos mais versáteis que existe. Por esse motivo, ele está presente em vários cômodos da casa. Eles são uma ótima escolha para os projetos de arquitetura e decoração já que garantem conforto térmico e acústico, resistência a riscos e manchas, além do excelente custo-benefício.O piso vinílico Durafloor é resistente à água, feito à base de PVC 100% reciclável e ideal para quem não abre mão da beleza nem da praticidade.</p>
 				</div>
 				<div class="row flex-col mt-5">
 					<header class="mb-3">
@@ -44,7 +44,7 @@
 						<h2>Fornecedor</h2>
 					</header>
 						<img width=180 height=180 src="<?php the_field('single_provider'); ?>" alt="">
-				</div> -->
+				</div>
 				<div class="product-colors mt-5">
 					<header>
 						<h2>Cores Disponíveis</h2>

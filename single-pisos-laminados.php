@@ -14,7 +14,7 @@
 		<div class="container-lg">
 			<div class="product-content">
 				<?php the_content()?>
-				<!-- <div class="row flex-col">
+				<div class="row flex-col">
 					<header class="mb-3">
 						<h1><?php the_title()?></h1>
 					</header>
@@ -46,7 +46,7 @@
 							<h2>Fornecedor</h2>
 						</header>
 						<img width=180 height=180 src="<?php the_field('single_provider'); ?>" alt="">
-				</div> -->
+				</div>
 				<div class="product-colors mt-5">
 					<header>
 						<h2>Cores Disponíveis</h2>
