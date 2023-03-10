@@ -16,244 +16,289 @@
 	</section>
 	<section class="s-product mt-10">
 		<div class="container-lg">
-			<div class="row jc-between">
-				<div class="product-content">
-					<?php the_content()?>
-					<!-- <div class="row flex-col">
-						<header class="mb-3">
-							<h2>Descrição</h2>
-						</header>
-						<p class="mb-2">Se você está procurando por um piso durável, fácil de limpar e que oferece uma ampla gama de estilos e opções de cor, então os pisos vinílicos são a escolha perfeita para você. Aqui na interiores e design, oferecemos uma ampla seleção de pisos vinílicos de alta qualidade, com preços acessíveis e instalação fácil.</p>
-						</div>
-					<div class="row flex-col mt-5">
-						<header class="mb-3">
-							<h2>Benefícios</h2>
-						</header>
-						<ul>
-							<li>Fácil de limpar</li>
-							<li>Não provoca alergias</li>
-							<li>Variedade de Texturas e padrões</li>
-							<li>Conforto acústico</li>
-							<li>Confortável em qualquer temperatura</li>
-						</ul>
-					</div>
-					<div class="row flex-col mt-5">
-						<header class="mb-3">
-							<h2>Indicações</h2>
-						</header>
-						<p class="mb-2">Áreas residenciais de grande circulação como quartos, salas, corredores e halls.</p>
-						<p>Áreas comerciais com grande circulação de pessoas como teatros, cinemas, casas de espetáculos, escolas, hotéis, shoppings</p>	
-					</div>
-					<div class="row flex-col mt-5">
-						<header class="mb-3">
-							<h2>Fornecedor</h2>
-						</header>
-						<img width=180 height=180 src="<?php the_field('single_provider'); ?>" alt="">
-					</div> -->
-				</div>
-				<div class="product-colors mt-5">
-					<header>
-						<h2>Cores Disponíveis</h2>
+			<div class="product-content">
+				<?php the_content()?>
+				<!-- <div class="row flex-col">
+					<header class="mb-3">
+						<h2>Descrição</h2>
 					</header>
-					<swiper-container style="--swiper-navigation-color: #D1FFA2; --swiper-pagination-color: #D1FFA2" class="mySwiper mt-3"
-						thumbs-swiper=".mySwiper2" space-between="4" navigation="true" slides-per-view="1">
+					<p class="mb-2">Se você está procurando por um piso durável, fácil de limpar e que oferece uma ampla gama de estilos e opções de cor, então os pisos vinílicos são a escolha perfeita para você. Aqui na interiores e design, oferecemos uma ampla seleção de pisos vinílicos de alta qualidade, com preços acessíveis e instalação fácil.</p>
+				</div>
+				<div class="row flex-col mt-5">
+					<header class="mb-3">
+						<h2>Benefícios</h2>
+					</header>
+					<ul>
+						<li>Fácil de limpar</li>
+						<li>Não provoca alergias</li>
+						<li>Variedade de Texturas e padrões</li>
+						<li>Conforto acústico</li>
+						<li>Confortável em qualquer temperatura</li>
+					</ul>
+				</div>
+				<div class="row flex-col mt-5">
+					<header class="mb-3">
+						<h2>Indicações</h2>
+					</header>
+					<p class="mb-2">Áreas residenciais de grande circulação como quartos, salas, corredores e halls.</p>
+					<p>Áreas comerciais com grande circulação de pessoas como teatros, cinemas, casas de espetáculos, escolas, hotéis, shoppings</p>	
+				</div>
+				<div class="row flex-col mt-5">
+					<header class="mb-3">
+						<h2>Fornecedor</h2>
+					</header>
+						<img width=180 height=180 src="<?php the_field('single_provider'); ?>" alt="">
+				</div> -->
+			</div>
+			<div class="product-colors mt-5">
+				<header>
+					<h2>Cores Disponíveis</h2>
+				</header>
+				<swiper-container style="--swiper-navigation-color: #D1FFA2; --swiper-pagination-color: #D1FFA2" class="mySwiper mt-3"
+					thumbs-swiper=".mySwiper2" space-between="4" navigation="true" slides-per-view="1">
+					<?php if( get_field('single_image_color_1') ): ?>
 						<swiper-slide>
 							<div class="d-flex jc-between ai-center">
 								<img width="590" height="370" src="<?php the_field('single_image_color_1');?>" alt="<?php the_field('single_name_color_1'); ?>"/>
 								<div style="width:36%; text-align:center;">
 									<header>
-										<h3><?php the_field('single_name_color_1'); ?></h3>
+										<?php if( get_field('single_name_color_1') ): ?>
+											<h3><?php the_field('single_name_color_1'); ?></h3>
+										<?php endif; ?>
 									</header>
 								</div>
 							</div>
 						</swiper-slide>
+					<?php endif; ?>
+					<?php if( get_field('single_image_color_2') ): ?>
 						<swiper-slide>
 							<div class="d-flex jc-between ai-center">
 								<img width="590" height="370" src="<?php the_field('single_image_color_2');?>" alt="<?php the_field('single_name_color_2'); ?>"/>
 								<div style="width:36%; text-align:center;">
 									<header>
-										<h3><?php the_field('single_name_color_2'); ?></h3>
+										<?php if( get_field('single_name_color_2') ): ?>
+											<h3><?php the_field('single_name_color_2'); ?></h3>
+										<?php endif; ?>
 									</header>
 								</div>
 							</div>
 						</swiper-slide>
+					<?php endif; ?>
+
+					<?php if( get_field('single_image_color_3') ): ?>
 						<swiper-slide>
 							<div class="d-flex jc-between ai-center">
 								<img width="590" height="370" src="<?php the_field('single_image_color_3');?>" alt="<?php the_field('single_name_color_3'); ?>"/>
 								<div style="width:36%; text-align:center;">
 									<header>
-										<h3><?php the_field('single_name_color_3'); ?></h3>
+										<?php if( get_field('single_name_color_3') ): ?>
+											<h3><?php the_field('single_name_color_3'); ?></h3>
+										<?php endif; ?>
 									</header>
 								</div>
 							</div>
 						</swiper-slide>
+					<?php endif; ?>
+
+					<?php if( get_field('single_image_color_4') ): ?>
 						<swiper-slide>
 							<div class="d-flex jc-between ai-center">
 								<img width="590" height="370" src="<?php the_field('single_image_color_4');?>" alt="<?php the_field('single_name_color_4'); ?>"/>
 								<div style="width:36%; text-align:center;">
 									<header>
+									<?php if( get_field('single_name_color_4') ): ?>
 										<h3><?php the_field('single_name_color_4'); ?></h3>
+									<?php endif; ?>
 									</header>
 								</div>
 							</div>
 						</swiper-slide>
+					<?php endif; ?>
+
+					<?php if( get_field('single_image_color_5') ): ?>
 						<swiper-slide>
 							<div class="d-flex jc-between ai-center">
 								<img width="590" height="370" src="<?php the_field('single_image_color_5');?>" alt="<?php the_field('single_name_color_5'); ?>"/>
 								<div style="width:36%; text-align:center;">
 									<header>
+									<?php if( get_field('single_name_color_5') ): ?>
 										<h3><?php the_field('single_name_color_5'); ?></h3>
+									<?php endif; ?>
 									</header>
 								</div>
 							</div>
 						</swiper-slide>
+					<?php endif; ?>
+
+					<?php if( get_field('single_image_color_6') ): ?>
 						<swiper-slide>
 							<div class="d-flex jc-between ai-center">
 								<img width="590" height="370" src="<?php the_field('single_image_color_6');?>" alt="<?php the_field('single_name_color_6'); ?>"/>
 								<div style="width:36%; text-align:center;">
 									<header>
+									<?php if( get_field('single_name_color_6') ): ?>
 										<h3><?php the_field('single_name_color_6'); ?></h3>
+									<?php endif; ?>
 									</header>
 								</div>
 							</div>
 						</swiper-slide>
+					<?php endif; ?>
+
+					<?php if( get_field('single_image_color_7') ): ?>
 						<swiper-slide>
 							<div class="d-flex jc-between ai-center">
 								<img width="590" height="370" src="<?php the_field('single_image_color_7');?>" alt="<?php the_field('single_name_color_7'); ?>"/>
 								<div style="width:36%; text-align:center;">
 									<header>
+									<?php if( get_field('single_name_color_7') ): ?>
 										<h3><?php the_field('single_name_color_7'); ?></h3>
+									<?php endif; ?>
 									</header>
 								</div>
 							</div>
 						</swiper-slide>
+					<?php endif; ?>
+
+					<?php if( get_field('single_image_color_8') ): ?>
 						<swiper-slide>
 							<div class="d-flex jc-between ai-center">
 								<img width="590" height="370" src="<?php the_field('single_image_color_8');?>" alt="<?php the_field('single_name_color_8'); ?>"/>
 								<div style="width:36%; text-align:center;">
 									<header>
+									<?php if( get_field('single_name_color_8') ): ?>
 										<h3><?php the_field('single_name_color_8'); ?></h3>
+									<?php endif; ?>
 									</header>
 								</div>
 							</div>
 						</swiper-slide>
+					<?php endif; ?>
+
+					<?php if( get_field('single_image_color_9') ): ?>
 						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
+						<div class="d-flex jc-between ai-center">
 								<img width="590" height="370" src="<?php the_field('single_image_color_9');?>" alt="<?php the_field('single_name_color_9'); ?>"/>
 								<div style="width:36%; text-align:center;">
 									<header>
-										<h3><?php the_field('single_name_color_9'); ?></h3>
-									</header>
+										<?php if( get_field('single_name_color_9') ): ?>
+											<h3><?php the_field('single_name_color_9'); ?></h3>
+										<?php endif; ?>
+										</header>
 								</div>
 							</div>
 						</swiper-slide>
+					<?php endif; ?>
+						
+					<?php if( get_field('single_name_color_10') ): ?>
 						<swiper-slide>
 							<div class="d-flex jc-between ai-center">
 								<img width="590" height="370" src="<?php the_field('single_image_color_10');?>" alt="<?php the_field('single_name_color_10'); ?>"/>
 								<div style="width:36%; text-align:center;">
 									<header>
+									<?php if( get_field('single_name_color_10') ): ?>
 										<h3><?php the_field('single_name_color_10'); ?></h3>
+									<?php endif; ?>
 									</header>
 								</div>
 							</div>
 						</swiper-slide>
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-								<img width="590" height="370" src="<?php the_field('single_image_color_11');?>" alt="<?php the_field('single_name_color_11'); ?>"/>
-								<div style="width:36%; text-align:center;">
-									<header>
-										<h3><?php the_field('single_name_color_11'); ?></h3>
-									</header>
-								</div>
+					<?php endif; ?>
+
+					?php if( get_field('single_image_color_11') ): ?>
+					<swiper-slide>
+						<div class="d-flex jc-between ai-center">
+							<img width="590" height="370" src="<?php the_field('single_image_color_11');?>" alt="<?php the_field('single_name_color_11'); ?>"/>
+							<div style="width:36%; text-align:center;">
+								<header>
+								<?php if( get_field('single_name_color_11') ): ?>
+									<h3><?php the_field('single_name_color_11'); ?></h3>
+								<?php endif; ?>
+								</header>
 							</div>
-						</swiper-slide>
+						</div>
+					</swiper-slide>
+					?php endif; ?>
+
+					<?php if( get_field('single_image_color_12') ): ?>
 						<swiper-slide>
 							<div class="d-flex jc-between ai-center">
 								<img width="590" height="370" src="<?php the_field('single_image_color_12');?>" alt="<?php the_field('single_name_color_12'); ?>"/>
 								<div style="width:36%; text-align:center;">
 									<header>
+									<?php if( get_field('single_name_color_12') ): ?>
 										<h3><?php the_field('single_name_color_12'); ?></h3>
+									<?php endif; ?>
 									</header>
 								</div>
 							</div>
 						</swiper-slide>
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-								<img width="590" height="370" src="<?php the_field('single_image_color_13');?>" alt="<?php the_field('single_name_color_13'); ?>"/>
-								<div style="width:36%; text-align:center;">
-									<header>
-										<h3><?php the_field('single_name_color_13'); ?></h3>
-									</header>
-								</div>
-							</div>
-						</swiper-slide>
-						<swiper-slide>
-							<div class="d-flex jc-between ai-center">
-								<img width="590" height="370" src="<?php the_field('single_image_color_14');?>" alt="<?php the_field('single_name_color_14'); ?>"/>
-								<div style="width:36%; text-align:center;">
-									<header>
-										<h3><?php the_field('single_name_color_14'); ?></h3>
-									</header>
-								</div>
-							</div>
-						</swiper-slide>
-						<!-- <swiper-slide>
-							<div class="d-flex jc-between ai-center">
-								<img width="590" height="370" src="https://swiperjs.com/demos/images/nature-2.jpg" />
-								<div style="width:36%; text-align:center;"><p>Nome da Cor</p></div>
-							</div>
-						</swiper-slide> -->
-  				</swiper-container>
+					<?php endif; ?>
+  			</swiper-container>
 
-					<swiper-container class="mySwiper2" space-between="8" slides-per-view="3" free-mode="true"
-						watch-slides-progress="true">
+				<swiper-container class="mySwiper2" space-between="8" slides-per-view="3" free-mode="true"
+					atch-slides-progress="true">
+					<?php if( get_field('single_image_color_1') ): ?>
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_1');?>" alt="<?php the_field('single_name_color_1'); ?>"/>
 						</swiper-slide>
+					<?php endif; ?>
+					<?php if( get_field('single_image_color_2') ): ?>
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_2');?>" alt="<?php the_field('single_name_color_2'); ?>"/>
 						</swiper-slide>
+					<?php endif; ?>
+					<?php if( get_field('single_image_color_3') ): ?>
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_3');?>" alt="<?php the_field('single_name_color_3'); ?>"/>
 						</swiper-slide>
+					<?php endif; ?>
+					<?php if( get_field('single_image_color_4') ): ?>
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_4');?>" alt="<?php the_field('single_name_color_4'); ?>"/>
 						</swiper-slide>
+					<?php endif; ?>
+					<?php if( get_field('single_image_color_5') ): ?>
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_5');?>" alt="<?php the_field('single_name_color_5'); ?>"/>
 						</swiper-slide>
+					<?php endif; ?>
+					<?php if( get_field('single_image_color_6') ): ?>
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_6');?>" alt="<?php the_field('single_name_color_6'); ?>"/>
 						</swiper-slide>
+					<?php endif; ?>
+					<?php if( get_field('single_image_color_7') ): ?>
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_7');?>" alt="<?php the_field('single_name_color_7'); ?>"/>
 						</swiper-slide>
+					<?php endif; ?>
+					<?php if( get_field('single_image_color_8') ): ?>
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_8');?>" alt="<?php the_field('single_name_color_8'); ?>"/>
 						</swiper-slide>
+					<?php endif; ?>
+					<?php if( get_field('single_image_color_9') ): ?>
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_9');?>" alt="<?php the_field('single_name_color_9'); ?>"/>
+							<?php endif; ?>
 						</swiper-slide>
+					<?php if( get_field('single_image_color_10') ): ?>
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_10');?>" alt="<?php the_field('single_name_color_10'); ?>"/>
 						</swiper-slide>
+					<?php endif; ?>
+					<?php if( get_field('single_image_color_11') ): ?>
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_11');?>" alt="<?php the_field('single_name_color_11'); ?>"/>
 						</swiper-slide>
+					<?php endif; ?>
+					<?php if( get_field('single_image_color_12') ): ?>
 						<swiper-slide>
 							<img width="295" height="185" src="<?php the_field('single_image_color_12');?>" alt="<?php the_field('single_name_color_12'); ?>"/>
 						</swiper-slide>
-						<swiper-slide>
-							<img width="295" height="185" src="<?php the_field('single_image_color_13');?>" alt="<?php the_field('single_name_color_13'); ?>"/>
-						</swiper-slide>
-						<swiper-slide>
-							<img width="295" height="185" src="<?php the_field('single_image_color_14');?>" alt="<?php the_field('single_name_color_14'); ?>"/>
-						</swiper-slide>
-						<!-- <swiper-slide>
-							<img width="295" height="185" src="https://swiperjs.com/demos/images/nature-2.jpg" />
-						</swiper-slide> -->
-					</swiper-container>
-				</div>
+					<?php endif; ?>
+				</swiper-container>
 			</div>
 		</div>
 	</section>
