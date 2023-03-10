@@ -25,7 +25,7 @@
 						<header class="mb-3">
 							<h2>Fornecedor</h2>
 						</header>
-						<img style="object-fit:contain;" src="<?php the_field('single_provider'); ?>" alt="">
+						<img style="max-width:180px" src="<?php the_field('single_provider'); ?>" alt="">
 				</div>
 				<div class="product-colors mt-5">
 					<header>
