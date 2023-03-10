@@ -23,7 +23,7 @@
 			<div class="durafloor">
 				<header class="product-title d-flex ai-center my-5">
 						<h2>Pisos Laminados Durafloor</h2>
-						<img class="ml-2 icon-provider" width=80 height=80 src="<?php the_field('page_provider_durafloor'); ?>" alt="">
+						<img class="ml-2" style="object-fit:contain;" width=80 height=80 src="<?php the_field('page_provider_durafloor'); ?>" alt="">
 				</header>
 					<?php 
 						$config = array ('posts_per_page' => '6', 'post_type' => 'pisos-laminados', 'category_name' => 'durafloor', 'order'=> 'DESC');
@@ -49,7 +49,7 @@
 			<div class="eucafloor mt-10">
 				<header class="product-title d-flex ai-center my-5">
 					<h2>Pisos Laminados Eucafloor</h2>
-					<img class="ml-2 icon-provider" width=80 height=80 src="<?php the_field('page_provider_eucafloor'); ?>" alt="">
+					<img class="ml-2" style="object-fit:contain;" width=80 height=80 src="<?php the_field('page_provider_eucafloor'); ?>" alt="">
 				</header>
 					<?php 
 						$config = array ('posts_per_page' => '-1', 'post_type' => 'pisos-laminados', 'category_name' => 'eucafloor', 'order'=> 'DESC');
