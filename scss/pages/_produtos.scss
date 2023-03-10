@@ -30,14 +30,14 @@
       ul li{
         list-style: inside;
       }
+      .icon-provider {
+        object-fit: contain;
+      }
     }
     @media screen and (max-width: 960px) {
       .product-title img {
         display: none;
       }
-    }
-    .icon-provider {
-      object-fit: contain;
     }
   }
 }
