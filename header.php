@@ -14,20 +14,20 @@
 		<!-- <title><?php wp_title( '|', true, 'right' );?><?php bloginfo( 'name' )?></title>
 		<meta name="title" content="<?php wp_title( '|', true, 'right' );?><?php bloginfo( 'name' )?>"> -->
 		<title>Os melhores itens para sua casa e escritório | Interior e Design</title>
-		<meta name="title" content="Os melhores itens para sua casa e escritório | Interior e Design">
+		<meta name="title" content="Os melhores itens para sua casa e escritório | Interiores e Design">
 		<meta name="description" content="Conheça nosso catálogo de Pisos Laminados, Cortinas de tecidos e Persianas, Pisos Vinílico e Box de Vidro - Entre em contato - (11) 98709-4252.">
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="http://interioresedesign.com.br/">
-		<meta property="og:title" content="Os melhores itens para sua casa e escritório | Interior e Design">
+		<meta property="og:title" content="Os melhores itens para sua casa e escritório | Interiores e Design">
 		<meta property="og:description" content="Conheça nosso catálogo de Pisos Laminados, Cortinas de tecidos e Persianas, Pisos Vinílico e Box de Vidro - Entre em contato - (11) 98709-4252.">
 		<meta property="og:image" content="<?php echo get_template_directory_uri()?>/social-share.jpg">
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image">
 		<meta property="twitter:url" content="http://interioresedesign.com.br/">
-		<meta property="twitter:title" content="Os melhores itens para sua casa e escritório | Interior e Design">
+		<meta property="twitter:title" content="Os melhores itens para sua casa e escritório | Interiores e Design">
 		<meta property="twitter:description" content="Conheça nosso catálogo de Pisos Laminados, Cortinas de tecidos e Persianas, Pisos Vinílico e Box de Vidro - Entre em contato - (11) 98709-4252.">
 		<meta property="twitter:image" content="<?php echo get_template_directory_uri()?>/social-share.jpg">
 		<?php wp_head();?>
