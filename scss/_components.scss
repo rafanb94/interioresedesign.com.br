@@ -30,7 +30,8 @@
   font-weight: 700;
 }
 .card-moreInfo {
-  width: 41rem;
+  max-width: 41rem;
+  width: 100%;
   height: 19.7rem;
   background-color: $primary-80;
   color: $primary-20;
