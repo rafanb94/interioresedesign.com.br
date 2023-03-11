@@ -174,7 +174,7 @@
 			<section class="s-catalogos my-10 py-5">
 				<div class="container">
 					<h2 class="txt-center pb-5"><span>Catálogos</span></h2>
-					<div class="swiper mySwiper">
+					<div class="swiper mySwiper3">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<a href="<?php echo get_template_directory_uri()?>/download/vip-wiler-k.pdf" download>
