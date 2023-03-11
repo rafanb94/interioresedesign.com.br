@@ -41,7 +41,7 @@ gulp.task('appJS', appJS)
 //Compile, Minify External JS
 function pluginsJS() {
 	return gulp
-		.src(["./js/plugins/lightbox.js"])
+		.src(["./js/plugins/swiper-bundle.min.js", "./js/plugins/swiper-element-bundle.min.js"])
 		.pipe(concat("plugins.min.js"))
 		.pipe(uglify())
 		.pipe(gulp.dest("js/"))

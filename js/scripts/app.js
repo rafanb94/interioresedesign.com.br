@@ -21,4 +21,4 @@
 			header.classList.remove("fixed-menu");
 		}
 	}
-	document.addEventListener('scroll', fixedMenu);
+document.addEventListener('scroll', fixedMenu);
