@@ -10,6 +10,14 @@
 					</div>
 				</div>
 			</section>
+			<section>
+				<div class="container">
+					<header>
+						<h2 class="mt-5 txt-center">Precisando de uma reforma?</h2>
+					</header>
+					<p class="txt-center" style="width:50%; margin:24px auto;"><b>Temos uma equipe especializada </b>(pedreiros, gesseiros, eletricistas e pintores) para fazer reforma completa da sua casa, apartamento e seu escritório e também contamos com <b>excelentes produtos</b> para deixar tudo do jeito que você precisa.</p>
+				</div>
+			</section>
 			<section class="s-produtos my-10">
 				<div class="container">
 					<h2 class="mb-5">Produtos</h2>
